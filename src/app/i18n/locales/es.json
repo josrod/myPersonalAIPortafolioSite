@@ -1,0 +1,143 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "projects": "Proyectos",
+    "aiApp": "App AI"
+  },
+  "home": {
+    "badge": "Portafolio de Soluciones AI-First",
+    "title": "Transformando Ideas en",
+    "titleHighlight": "Aplicaciones Inteligentes",
+    "subtitle": "Un portafolio de aplicaciones impulsadas por AI enfocadas en productividad personal, finanzas inteligentes, analítica deportiva y generación asistida de software. Casos de uso reales para asistentes inteligentes y automatización moderna.",
+    "ctaExplore": "Explorar Solucionador AI",
+    "ctaProjects": "Ver Todos los Proyectos",
+    "featuresTitle": "Propuesta de Valor Transversal",
+    "featuresSubtitle": "Soluciones AI-first que convierten información compleja en decisiones simples",
+    "feature1Title": "Inteligencia Impulsada por AI",
+    "feature1Desc": "Asistentes inteligentes que transforman información compleja en insights accionables",
+    "feature2Title": "Decisiones Basadas en Datos",
+    "feature2Desc": "Convirtiendo datos crudos en visualizaciones y métricas intuitivas",
+    "feature3Title": "Productividad y Colaboración",
+    "feature3Desc": "Herramientas que ayudan a equipos e individuos a trabajar más inteligentemente",
+    "feature4Title": "Desarrollo Asistido por AI",
+    "feature4Desc": "Del concepto al código listo para producción con automatización inteligente",
+    "ctaTitle": "De la Información a la Acción",
+    "ctaSubtitle": "Descubre cómo las aplicaciones impulsadas por AI optimizan tiempo, recursos y aceleran la creación de nuevos productos digitales.",
+    "ctaButton": "Conocer Más",
+    "footer": "© 2026 Mi Portafolio. Construido con pasión."
+  },
+  "about": {
+    "title": "Resumen del Portafolio",
+    "subtitle": "Aplicaciones impulsadas por AI enfocadas en productividad real y automatización",
+    "visionTitle": "La Visión",
+    "vision1": "Este portafolio reúne aplicaciones impulsadas por AI enfocadas en productividad personal, finanzas inteligentes, analítica deportiva y generación asistida de software, mostrando un rango sólido de casos de uso reales para asistentes inteligentes y automatización moderna.",
+    "vision2": "Desde briefings de inteligencia diaria para viajeros hasta analítica de fútbol fantasy y estudios de desarrollo asistido por AI, cada aplicación demuestra cómo la inteligencia artificial puede transformar datos complejos en insights accionables y optimizar procesos de toma de decisiones.",
+    "vision3": "El hilo conductor:",
+    "vision3Bold": "Soluciones AI-first que convierten información compleja en decisiones simples",
+    "vision3End": ", optimizan tiempo y recursos del usuario y aceleran la creación de nuevos productos digitales.",
+    "stat1Label": "Apps Impulsadas por AI",
+    "stat2Label": "Tecnologías Integradas",
+    "stat3Label": "Puntos de Datos Analizados",
+    "stat4Label": "Productividad Ganada",
+    "skillsTitle": "Tecnologías Centrales y Áreas de Enfoque",
+    "value1Title": "Productividad y Toma de Decisiones",
+    "value1Desc": "AI Commute, BudgetFlow y Agile Tracker ayudan a usuarios y equipos a consumir información, decidir y priorizar mejor con menos fricción.",
+    "value2Title": "Datos + AI Aplicada",
+    "value2Desc": "FootballStats y BudgetFlow muestran cómo transformar datos crudos (deportes, finanzas) en indicadores accionables y visualizaciones intuitivas.",
+    "value3Title": "Desarrollo Asistido por AI",
+    "value3Desc": "VibeForge posiciona al portafolio en la frontera de AI para desarrollo, desde la idea hasta código estructurado listo para producción."
+  },
+  "projects": {
+    "title": "Aplicaciones Impulsadas por AI",
+    "subtitle": "Un portafolio completo mostrando automatización inteligente en el mundo real",
+    "aiCommute": {
+      "title": "AI Commute Summarizer",
+      "tagline": "Briefing de Inteligencia Diaria, Sintetizado para el Camino",
+      "description": "Asistente diario que convierte fuentes de información (noticias, briefings, actualizaciones internas) en resúmenes breves y fáciles de consumir durante el trayecto al trabajo. Aplicación AI generativa para consumo de información en movilidad."
+    },
+    "budgetFlow": {
+      "title": "BudgetFlow (MoneyMinder)",
+      "tagline": "Seguimiento Inteligente de Finanzas Personales",
+      "description": "Plataforma de finanzas personales con tracking inteligente de ingresos y gastos, categorización flexible, reportes visuales y soporte multilingüe (inglés y español). Insights financieros potenciados por AI mediante visualizaciones y recomendaciones."
+    },
+    "agileTracker": {
+      "title": "Processing Team Agile Tracker",
+      "tagline": "Ready-Set-Track: Planificación de Sprints y Colaboración en Equipo",
+      "description": "Herramienta de gestión ágil para equipos, con foco en planificación de sprints, colaboración, alineación de objetivos y visualización de progreso y velocidad de equipo. AI apoya orquestación de tareas, priorización y seguimiento continuo."
+    },
+    "vibeForge": {
+      "title": "VibeForge – Smooth Build Studio",
+      "tagline": "Entorno de Desarrollo Vibe-First",
+      "description": "Entorno de desarrollo impulsado por AI donde el usuario describe la visión del producto y el sistema genera estructura de páginas, componentes y servicios, con vista previa instantánea y código exportable. Caso más avanzado de AI como copiloto de producto y generador de código de producción sin vendor lock-in."
+    },
+    "footballStats": {
+      "title": "FootballStats – Fantasy Power Index",
+      "tagline": "Fantasy Pitch Pulse: Analítica Avanzada de Fútbol",
+      "description": "Dashboard de analítica futbolística tipo fantasy con rankings de jugadores, métricas propias (FPI), múltiples ligas (Premier League, La Liga, Bundesliga, Serie A, Champions League) y secciones como Dream Team Builder y Fantasy Rankings. AI y datos en tiempo (casi) real para analítica deportiva avanzada."
+    },
+    "hearthbeat": {
+      "title": "Hearthbeat Family Hub",
+      "tagline": "Coordinación Inteligente y Comunicación Familiar",
+      "description": "Concepto de hub familiar que integra coordinación, comunicación y recomendaciones inteligentes para el hogar. Combina programación, tareas compartidas y sugerencias impulsadas por AI para optimizar la vida familiar."
+    },
+    "thursdayFootball": {
+      "title": "ThursdayFootball",
+      "tagline": "Gestión de Partidos Casuales de Fútbol",
+      "description": "Plataforma social para organizar partidos de fútbol entre amigos y compañeros. Crea partidos, gestiona equipos, lleva registro de quién juega y administra la rotación de quién le toca lavar las camisetas. Perfecto para grupos de fútbol semanales casuales."
+    },
+    "viewProject": "Ver Proyecto",
+    "code": "Código",
+    "narrativeTitle": "Insight del Portafolio",
+    "narrative1Title": "Productividad y Decisiones",
+    "narrative1Desc": "AI Commute, BudgetFlow y Agile Tracker ayudan a usuarios a consumir información y priorizar con menos fricción.",
+    "narrative2Title": "Datos + AI Aplicada",
+    "narrative2Desc": "FootballStats y BudgetFlow transforman datos crudos en indicadores accionables y visualizaciones intuitivas.",
+    "narrative3Title": "Desarrollo Asistido por AI",
+    "narrative3Desc": "VibeForge posiciona al portafolio en la frontera de AI para desarrollo, desde la idea hasta código listo para producción.",
+    "narrativeConclusion": "En conjunto, estas aplicaciones ilustran",
+    "narrativeBold": "soluciones AI-first que convierten información compleja en decisiones simples",
+    "narrativeEnd": ", optimizan tiempo y recursos del usuario y aceleran la creación de nuevos productos digitales."
+  },
+  "aiApp": {
+    "badge": "Motor de Soluciones Impulsado por AI",
+    "title": "Solucionador de Problemas AI",
+    "subtitle": "Describe tu problema y obtén soluciones inteligentes paso a paso",
+    "problemTypeLabel": "Tipo de Problema",
+    "problemTypePlaceholder": "Selecciona el tipo de problema",
+    "problemLabel": "Describe Tu Problema",
+    "problemPlaceholder": "Ingresa tu problema en detalle... Cuanto más contexto proporciones, mejor será la solución.",
+    "solving": "Analizando Problema...",
+    "solve": "Resolver Problema",
+    "solutionTitle": "Solución AI",
+    "problemSummary": "Resumen del Problema",
+    "solutionApproach": "Enfoque de Solución",
+    "stepByStep": "Guía Paso a Paso",
+    "howItWorksTitle": "Cómo Funciona",
+    "howItWorks1": "Selecciona tu tipo de problema del menú desplegable",
+    "howItWorks2": "Describe tu problema en detalle",
+    "howItWorks3": "Haz clic en \"Resolver Problema\" para obtener soluciones impulsadas por AI",
+    "howItWorks4": "Sigue la guía paso a paso para implementar la solución",
+    "recentSolutions": "Soluciones Recientes",
+    "proTipTitle": "Consejo Pro",
+    "proTipDesc": "Para mejores resultados, proporciona tanto contexto y detalle como sea posible al describir tu problema. Incluye cualquier restricción, requisito u objetivo específico.",
+    "types": {
+      "general": "Problema General",
+      "generalDesc": "Cualquier pregunta o desafío general",
+      "math": "Matemáticas",
+      "mathDesc": "Ecuaciones y cálculos matemáticos",
+      "coding": "Programación",
+      "codingDesc": "Lógica de código y algoritmos",
+      "logic": "Acertijo de Lógica",
+      "logicDesc": "Problemas de razonamiento lógico",
+      "optimization": "Optimización",
+      "optimizationDesc": "Eficiencia y optimización de recursos"
+    }
+  },
+  "notFound": {
+    "title": "Página No Encontrada",
+    "description": "¡Ups! La página que buscas no existe. Puede haber sido movida o eliminada.",
+    "goHome": "Ir a Inicio",
+    "goBack": "Volver"
+  }
+}
