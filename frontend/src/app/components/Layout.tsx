@@ -3,6 +3,7 @@ import { Sparkles, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { ChatWidget } from "./ChatWidget";
 
 export function Layout() {
   const location = useLocation();
@@ -13,39 +14,38 @@ export function Layout() {
     { path: "/", label: t("nav.home") },
     { path: "/about", label: t("nav.about") },
     { path: "/projects", label: t("nav.projects") },
+    { path: "/contact", label: t("nav.contact") },
+    { path: "/consultation", label: t("nav.consultation") },
     { path: "/ai-app", label: t("nav.aiApp") },
   ];
 
   const isActive = (path: string) => {
-    if (path === "/") {
-      return location.pathname === "/";
-    }
+    if (path === "/") return location.pathname === "/";
     return location.pathname.startsWith(path);
   };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200" data-testid="main-nav">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            {/* Logo */}
-            <Link to="/" className="flex items-center gap-2 group">
+            <Link to="/" className="flex items-center gap-2 group" data-testid="nav-logo">
               <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
                 <Sparkles className="w-6 h-6 text-white" />
               </div>
-              <span className="text-xl font-semibold text-slate-900">Software Portfolio</span>
+              <span className="text-xl font-semibold text-slate-900">AI-First Consulting</span>
             </Link>
 
-            {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center gap-6">
+            <div className="hidden lg:flex items-center gap-5">
               {navItems.map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`transition-colors ${
+                  data-testid={`nav-link-${item.path.replace(/\//g, '') || 'home'}`}
+                  className={`text-sm transition-colors ${
                     isActive(item.path)
-                      ? "text-blue-600"
+                      ? "text-blue-600 font-medium"
                       : "text-slate-600 hover:text-slate-900"
                   }`}
                 >
@@ -55,10 +55,10 @@ export function Layout() {
               <LanguageSwitcher />
             </div>
 
-            {/* Mobile Menu Button */}
-            <div className="md:hidden flex items-center gap-2">
+            <div className="lg:hidden flex items-center gap-2">
               <LanguageSwitcher />
               <button
+                data-testid="mobile-menu-btn"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className="p-2 text-slate-600 hover:text-slate-900"
               >
@@ -68,9 +68,8 @@ export function Layout() {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden border-t border-slate-200 bg-white">
+          <div className="lg:hidden border-t border-slate-200 bg-white">
             <div className="px-4 py-4 space-y-3">
               {navItems.map((item) => (
                 <Link
@@ -91,17 +90,17 @@ export function Layout() {
         )}
       </nav>
 
-      {/* Main Content */}
       <main className="pt-16">
         <Outlet />
       </main>
 
-      {/* Footer */}
-      <footer className="bg-slate-900 text-slate-300 py-8 mt-20">
+      <footer className="bg-slate-900 text-slate-300 py-8 mt-20" data-testid="footer">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p>{t("home.footer")}</p>
         </div>
       </footer>
+
+      <ChatWidget />
     </div>
   );
 }

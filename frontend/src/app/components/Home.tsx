@@ -51,15 +51,20 @@ export function Home() {
                 {t("home.subtitle")}
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link to="/ai-app">
-                  <Button size="lg" className="gap-2">
+                <Link to="/consultation">
+                  <Button size="lg" className="gap-2" data-testid="hero-cta-consultation">
                     {t("home.ctaExplore")}
                     <ArrowRight className="w-4 h-4" />
                   </Button>
                 </Link>
                 <Link to="/projects">
-                  <Button size="lg" variant="outline">
+                  <Button size="lg" variant="outline" data-testid="hero-cta-projects">
                     {t("home.ctaProjects")}
+                  </Button>
+                </Link>
+                <Link to="/contact">
+                  <Button size="lg" variant="outline" data-testid="hero-cta-contact">
+                    {t("home.ctaContact")}
                   </Button>
                 </Link>
               </div>

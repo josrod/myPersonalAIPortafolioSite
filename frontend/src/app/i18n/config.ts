@@ -2,6 +2,8 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import en from './locales/en.json';
 import es from './locales/es.json';
+import de from './locales/de.json';
+import ptBR from './locales/pt-BR.json';
 
 i18n
   .use(initReactI18next)
@@ -9,8 +11,10 @@ i18n
     resources: {
       en: { translation: en },
       es: { translation: es },
+      de: { translation: de },
+      'pt-BR': { translation: ptBR },
     },
-    lng: 'en', // default language
+    lng: 'en',
     fallbackLng: 'en',
     interpolation: {
       escapeValue: false,

@@ -1,6 +1,6 @@
 import { Award, BookOpen, Coffee, Heart, Brain, Zap, TrendingUp, Code, Server, Monitor } from "lucide-react";
 import { Card } from "./ui/card";
-import profileImage from "figma:asset/d449f75dc33297607a801b0a02400c567f97ffb4.png";
+const profileImage = "/src/assets/d449f75dc33297607a801b0a02400c567f97ffb4.png";
 import { useTranslation } from "react-i18next";
 
 export function About() {
