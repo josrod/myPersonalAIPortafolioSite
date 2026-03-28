@@ -79,6 +79,11 @@
       "tagline": "Fantasy Pitch Pulse: Analitica Avancada de Futebol",
       "description": "Dashboard de analitica futebolistica com rankings de jogadores, metricas proprietarias FPI e multiplas ligas."
     },
+    "footballAcademy": {
+      "title": "Football Academy Manager",
+      "tagline": "Plataforma SaaS Completa para Academias de Futebol Juvenil",
+      "description": "Plataforma de gestao integral para academias de futebol juvenil. Gerencia inscricao de alunos, programacao de aulas, processamento de pagamentos, designacao de treinadores e comunicacao com pais. CRM completo com acompanhamento de presenca e relatorios de progresso."
+    },
     "hearthbeat": {
       "title": "Hearthbeat Family Hub",
       "tagline": "Coordenacao Inteligente e Comunicacao Familiar",

@@ -6,41 +6,31 @@ Portafolio para servicio de consultoria de desarrollo de aplicacion AI First con
 ## Architecture
 - **Frontend**: Vite + React + TypeScript + Tailwind CSS v4 (port 3000)
 - **Backend**: FastAPI + Python (port 8001)
-- **Database**: MongoDB (contacts, appointments, chats, leads, notifications)
+- **Database**: MongoDB
 - **AI**: OpenAI GPT-4o-mini via Emergent LLM Key
-- **PDF**: fpdf2 library for lead magnet generation
-- **Font**: DM Sans
 
 ## What's Been Implemented
 
-### Phase 1 (March 28, 2026)
-- [x] Portfolio restructured from Figma/Vite to Emergent platform
-- [x] Homepage, About, Projects (7 AI apps), Contact form (MOCKED email), Consultation booking, AI Chat widget
+### Phase 1-3 (March 28, 2026)
+- [x] Full portfolio with Homepage, About, Projects, Contact, Consultation, AI App
 - [x] Multi-language: EN, ES, DE, PT-BR
+- [x] AI Chat widget (GPT-4o-mini), Contact form (MOCKED email), Consultation booking + ICS
+- [x] Admin Dashboard (/admin, pw: admin2026!)
+- [x] Testimonials, Lead Magnet with real PDF, Dark mode, Admin notifications (MOCKED email)
 
-### Phase 2 (March 28, 2026)
-- [x] Google Calendar ICS download for booked consultations
-- [x] Admin Dashboard (/admin, password: admin2026!) with stats, tables, tabs
-- [x] SEO meta tags (OG, Twitter Card, Schema.org)
-- [x] Testimonials section with scroll-triggered animations (4 clients)
-- [x] Lead Magnet email capture form
-
-### Phase 3 (March 28, 2026)
-- [x] Real PDF generation - "5 Steps to Integrate AI in Your Business" (7-page professional PDF)
-- [x] Dark mode toggle with localStorage persistence
-- [x] Admin notification system (MOCKED email) - notifications for new contacts, appointments, leads
-- [x] All components updated with dark: variants
-- [x] Tests: Backend 100% (16/16), Frontend 100%, Integration 100%
+### Phase 4 (March 28, 2026)
+- [x] Football Academy Manager project added (8th project total)
+  - SaaS platform for youth football academies
+  - Technologies: React, SaaS, Payment Integration, CRM, Scheduling
+  - Live link: football-academy-mvp.emergent.host
+  - Translations in all 4 languages
+- [x] Dark mode applied to Projects page cards and narrative section
 
 ## Prioritized Backlog
-### P0 (When Resend API key provided)
-- [ ] Real email sending for contact form, consultation confirmations, admin notifications
+### P0
+- [ ] Integrate Resend for real email sending
 
 ### P1
 - [ ] Blog/Resources section
-- [ ] Google Calendar API integration (OAuth)
-- [ ] Analytics/tracking
-
-### P2
-- [ ] Admin appointment management (cancel/reschedule from dashboard)
-- [ ] Portfolio visit analytics
+- [ ] Google Calendar API (OAuth)
+- [ ] Internal analytics system

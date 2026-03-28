@@ -79,6 +79,11 @@
       "tagline": "Fantasy Pitch Pulse: Advanced Football Analytics",
       "description": "Football analytics dashboard with player rankings, proprietary FPI metrics, multiple leagues (Premier League, La Liga, Bundesliga, Serie A, Champions League) and sections like Dream Team Builder and Fantasy Rankings. AI and near-real-time data for advanced sports analytics."
     },
+    "footballAcademy": {
+      "title": "Football Academy Manager",
+      "tagline": "Complete SaaS Platform for Youth Football Academies",
+      "description": "End-to-end management platform for youth football academies. Handles student enrollment, class scheduling, payment processing, coach assignment, and parent communication. Full CRM with attendance tracking and progress reports."
+    },
     "hearthbeat": {
       "title": "Hearthbeat Family Hub",
       "tagline": "Smart Family Coordination & Communication",

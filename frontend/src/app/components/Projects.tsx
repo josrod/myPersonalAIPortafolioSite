@@ -1,4 +1,4 @@
-import { ExternalLink, Clock, DollarSign, Target, Sparkles, Trophy, Home, Users } from "lucide-react";
+import { ExternalLink, Clock, DollarSign, Target, Sparkles, Trophy, Home, Users, GraduationCap } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 import { Badge } from "./ui/badge";
@@ -70,6 +70,16 @@ export function Projects() {
       liveLink: "https://thursdayfootball.netlify.app",
     },
     {
+      title: t("projects.footballAcademy.title"),
+      tagline: t("projects.footballAcademy.tagline"),
+      description: t("projects.footballAcademy.description"),
+      image:
+        "https://images.unsplash.com/photo-1606470542032-a9caa0be6e97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3V0aCUyMGZvb3RiYWxsJTIwYWNhZGVteSUyMHRyYWluaW5nJTIwY2hpbGRyZW4lMjBjb2FjaHxlbnwxfHx8fDE3NzM0ODg2Njh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      technologies: ["React", "SaaS", "Payment Integration", "CRM", "Scheduling"],
+      icon: GraduationCap,
+      liveLink: "https://football-academy-mvp.emergent.host/login",
+    },
+    {
       title: t("projects.hearthbeat.title"),
       tagline: t("projects.hearthbeat.tagline"),
       description: t("projects.hearthbeat.description"),
@@ -95,8 +105,8 @@ export function Projects() {
         {/* Projects Grid */}
         <div className="grid lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="relative aspect-video overflow-hidden bg-slate-100">
+            <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow dark:bg-slate-800/50 dark:border-slate-700" data-testid={`project-card-${index}`}>
+              <div className="relative aspect-video overflow-hidden bg-slate-100 dark:bg-slate-800">
                 <ImageWithFallback
                   src={project.image}
                   alt={project.title}
@@ -110,10 +120,10 @@ export function Projects() {
               </div>
               <div className="p-6 space-y-4">
                 <div>
-                  <h3 className="text-2xl text-slate-900 mb-1">{project.title}</h3>
-                  <p className="text-sm text-blue-600">{project.tagline}</p>
+                  <h3 className="text-2xl text-slate-900 dark:text-white mb-1">{project.title}</h3>
+                  <p className="text-sm text-blue-600 dark:text-blue-400">{project.tagline}</p>
                 </div>
-                <p className="text-slate-600">{project.description}</p>
+                <p className="text-slate-600 dark:text-slate-300">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, techIndex) => (
                     <Badge key={techIndex} variant="secondary">
@@ -137,8 +147,8 @@ export function Projects() {
 
         {/* Portfolio Narrative */}
         <div className="mt-20">
-          <Card className="p-12 bg-gradient-to-br from-blue-50 to-purple-50 border-blue-200">
-            <h2 className="text-3xl text-slate-900 mb-6 text-center">
+          <Card className="p-12 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-950/30 dark:to-purple-950/30 border-blue-200 dark:border-blue-800">
+            <h2 className="text-3xl text-slate-900 dark:text-white mb-6 text-center">
               {t("projects.narrativeTitle")}
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mb-8">
