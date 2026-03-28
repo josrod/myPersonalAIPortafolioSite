@@ -146,6 +146,7 @@
     "successTitle": "Consulta Agendada!",
     "successMessage": "Tu consulta ha sido confirmada. Enviaremos una confirmacion a tu correo.",
     "errorMessage": "Algo salio mal. Por favor intentalo de nuevo.",
+    "addToCalendar": "Agregar al Calendario",
     "noSlots": "No hay horarios disponibles para esta fecha",
     "selectDate": "Selecciona una fecha para ver horarios disponibles",
     "topics": {
@@ -206,5 +207,45 @@
     "description": "Ups! La pagina que buscas no existe. Puede haber sido movida o eliminada.",
     "goHome": "Ir a Inicio",
     "goBack": "Volver"
+  },
+  "testimonials": {
+    "title": "Lo que Dicen Nuestros Clientes",
+    "subtitle": "Confianza de empresas innovadoras en todo el mundo",
+    "t1Name": "Maria Gonzalez",
+    "t1Role": "CTO, FinTech Solutions",
+    "t1Text": "La hoja de ruta de estrategia AI que entregaron transformo nuestro enfoque de procesamiento de datos. Redujimos el trabajo manual en un 60%.",
+    "t2Name": "Stefan Richter",
+    "t2Role": "VP Ingenieria, LogiTech GmbH",
+    "t2Text": "Su experiencia en integracion AI fue exactamente lo que necesitabamos. Conectaron perfectamente nuestros sistemas legacy con capacidades modernas de ML.",
+    "t3Name": "Lucas Ferreira",
+    "t3Role": "Director de Producto, DataViz Inc",
+    "t3Text": "El dashboard de analitica deportiva que construyeron procesa millones de datos en tiempo real. Nuestros usuarios aman las visualizaciones intuitivas.",
+    "t4Name": "Ana Delgado",
+    "t4Role": "CEO, SmartHome Labs",
+    "t4Text": "Del concepto a produccion en solo 8 semanas. Su enfoque de desarrollo asistido por AI acelero dramaticamente nuestro time-to-market."
+  },
+  "leadMagnet": {
+    "badge": "Guia Gratuita",
+    "title": "5 Pasos para Integrar AI en tu Negocio",
+    "subtitle": "Una guia practica con estrategias accionables para identificar oportunidades AI, construir tu hoja de ruta y medir ROI.",
+    "step1": "Audita tus procesos actuales para oportunidades AI",
+    "step2": "Define metricas de exito y KPIs claros",
+    "step3": "Elige las tecnologias AI correctas para tu caso de uso",
+    "step4": "Construye una hoja de ruta de implementacion por fases",
+    "step5": "Mide, itera y escala inteligentemente",
+    "formTitle": "Obtener tu Guia Gratuita",
+    "formSubtitle": "Ingresa tus datos para descargar al instante.",
+    "nameLabel": "Nombre Completo",
+    "namePlaceholder": "Tu nombre",
+    "emailLabel": "Correo Electronico",
+    "emailPlaceholder": "tu@correo.com",
+    "companyLabel": "Empresa (opcional)",
+    "companyPlaceholder": "Tu empresa",
+    "submitBtn": "Descargar Guia Gratuita",
+    "sending": "Procesando...",
+    "successTitle": "Tu Guia esta Lista!",
+    "successMessage": "Haz clic en el boton de abajo para descargar tu copia.",
+    "downloadBtn": "Descargar Guia PDF",
+    "errorMessage": "Algo salio mal. Por favor intentalo de nuevo."
   }
 }

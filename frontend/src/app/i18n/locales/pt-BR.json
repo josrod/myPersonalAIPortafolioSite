@@ -146,6 +146,7 @@
     "successTitle": "Consulta Agendada!",
     "successMessage": "Sua consulta foi confirmada. Enviaremos uma confirmacao para seu e-mail.",
     "errorMessage": "Algo deu errado. Por favor, tente novamente.",
+    "addToCalendar": "Adicionar ao Calendario",
     "noSlots": "Nenhum horario disponivel para esta data",
     "selectDate": "Selecione uma data para ver horarios disponiveis",
     "topics": {
@@ -206,5 +207,45 @@
     "description": "Ops! A pagina que voce procura nao existe.",
     "goHome": "Ir para Inicio",
     "goBack": "Voltar"
+  },
+  "testimonials": {
+    "title": "O que Nossos Clientes Dizem",
+    "subtitle": "Confianca de empresas inovadoras em todo o mundo",
+    "t1Name": "Maria Gonzalez",
+    "t1Role": "CTO, FinTech Solutions",
+    "t1Text": "O roteiro de estrategia AI que entregaram transformou nossa abordagem de processamento de dados. Reduzimos o trabalho manual em 60%.",
+    "t2Name": "Stefan Richter",
+    "t2Role": "VP Engenharia, LogiTech GmbH",
+    "t2Text": "Sua expertise em integracao AI foi exatamente o que precisavamos. Conectaram perfeitamente nossos sistemas legados com capacidades modernas de ML.",
+    "t3Name": "Lucas Ferreira",
+    "t3Role": "Diretor de Produto, DataViz Inc",
+    "t3Text": "O dashboard de analitica esportiva que construiram processa milhoes de dados em tempo real. Nossos usuarios amam as visualizacoes intuitivas.",
+    "t4Name": "Ana Delgado",
+    "t4Role": "CEO, SmartHome Labs",
+    "t4Text": "Do conceito a producao em apenas 8 semanas. Sua abordagem de desenvolvimento assistido por AI acelerou dramaticamente nosso time-to-market."
+  },
+  "leadMagnet": {
+    "badge": "Guia Gratuito",
+    "title": "5 Passos para Integrar AI no Seu Negocio",
+    "subtitle": "Um guia pratico com estrategias acionaveis para identificar oportunidades AI e medir ROI.",
+    "step1": "Audite seus processos atuais para oportunidades AI",
+    "step2": "Defina metricas de sucesso e KPIs claros",
+    "step3": "Escolha as tecnologias AI certas para seu caso de uso",
+    "step4": "Construa um roteiro de implementacao por fases",
+    "step5": "Meca, itere e escale inteligentemente",
+    "formTitle": "Obter Seu Guia Gratuito",
+    "formSubtitle": "Insira seus dados para baixar instantaneamente.",
+    "nameLabel": "Nome Completo",
+    "namePlaceholder": "Seu nome",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "seu@email.com",
+    "companyLabel": "Empresa (opcional)",
+    "companyPlaceholder": "Sua empresa",
+    "submitBtn": "Baixar Guia Gratuito",
+    "sending": "Processando...",
+    "successTitle": "Seu Guia esta Pronto!",
+    "successMessage": "Clique no botao abaixo para baixar sua copia.",
+    "downloadBtn": "Baixar Guia PDF",
+    "errorMessage": "Algo deu errado. Por favor, tente novamente."
   }
 }

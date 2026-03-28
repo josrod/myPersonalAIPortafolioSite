@@ -6,6 +6,7 @@ import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Consultation } from "./components/Consultation";
 import { AIApp } from "./components/AIApp";
+import { AdminDashboard } from "./components/AdminDashboard";
 import { NotFound } from "./components/NotFound";
 
 export const router = createBrowserRouter([
@@ -19,6 +20,7 @@ export const router = createBrowserRouter([
       { path: "contact", Component: Contact },
       { path: "consultation", Component: Consultation },
       { path: "ai-app", Component: AIApp },
+      { path: "admin", Component: AdminDashboard },
       { path: "*", Component: NotFound },
     ],
   },

@@ -146,6 +146,7 @@
     "successTitle": "Consultation Booked!",
     "successMessage": "Your consultation has been confirmed. We'll send a confirmation to your email.",
     "errorMessage": "Something went wrong. Please try again.",
+    "addToCalendar": "Add to Calendar",
     "noSlots": "No available slots for this date",
     "selectDate": "Select a date to see available times",
     "topics": {
@@ -206,5 +207,45 @@
     "description": "Oops! The page you're looking for doesn't exist. It might have been moved or deleted.",
     "goHome": "Go Home",
     "goBack": "Go Back"
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Trusted by forward-thinking companies worldwide",
+    "t1Name": "Maria Gonzalez",
+    "t1Role": "CTO, FinTech Solutions",
+    "t1Text": "The AI strategy roadmap they delivered transformed our approach to data processing. We reduced manual work by 60% and our team now focuses on high-value tasks.",
+    "t2Name": "Stefan Richter",
+    "t2Role": "VP Engineering, LogiTech GmbH",
+    "t2Text": "Their expertise in AI integration was exactly what we needed. They seamlessly connected our legacy systems with modern ML capabilities, delivering results ahead of schedule.",
+    "t3Name": "Lucas Ferreira",
+    "t3Role": "Product Director, DataViz Inc",
+    "t3Text": "The sports analytics dashboard they built for us processes millions of data points in real-time. Our users love the intuitive visualizations and predictive insights.",
+    "t4Name": "Ana Delgado",
+    "t4Role": "CEO, SmartHome Labs",
+    "t4Text": "From concept to production in just 8 weeks. Their AI-assisted development approach accelerated our time-to-market dramatically. Highly recommended for any AI project."
+  },
+  "leadMagnet": {
+    "badge": "Free Guide",
+    "title": "5 Steps to Integrate AI in Your Business",
+    "subtitle": "A practical guide with actionable strategies to identify AI opportunities, build your roadmap, and measure ROI.",
+    "step1": "Audit your current processes for AI opportunities",
+    "step2": "Define clear success metrics and KPIs",
+    "step3": "Choose the right AI technologies for your use case",
+    "step4": "Build a phased implementation roadmap",
+    "step5": "Measure, iterate, and scale intelligently",
+    "formTitle": "Get Your Free Guide",
+    "formSubtitle": "Enter your details to download instantly.",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your@email.com",
+    "companyLabel": "Company (optional)",
+    "companyPlaceholder": "Your company",
+    "submitBtn": "Download Free Guide",
+    "sending": "Processing...",
+    "successTitle": "Your Guide is Ready!",
+    "successMessage": "Click the button below to download your copy.",
+    "downloadBtn": "Download PDF Guide",
+    "errorMessage": "Something went wrong. Please try again."
   }
 }

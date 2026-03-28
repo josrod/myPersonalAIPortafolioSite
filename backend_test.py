@@ -9,11 +9,15 @@ class PortfolioAPITester:
         self.tests_run = 0
         self.tests_passed = 0
         self.session_id = f"test_session_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+        self.admin_token = None
+        self.test_appointment_id = None
 
-    def run_test(self, name, method, endpoint, expected_status, data=None, params=None):
+    def run_test(self, name, method, endpoint, expected_status, data=None, params=None, headers=None):
         """Run a single API test"""
         url = f"{self.base_url}/{endpoint}"
-        headers = {'Content-Type': 'application/json'}
+        default_headers = {'Content-Type': 'application/json'}
+        if headers:
+            default_headers.update(headers)
 
         self.tests_run += 1
         print(f"\n🔍 Testing {name}...")
@@ -21,9 +25,9 @@ class PortfolioAPITester:
         
         try:
             if method == 'GET':
-                response = requests.get(url, headers=headers, params=params, timeout=30)
+                response = requests.get(url, headers=default_headers, params=params, timeout=30)
             elif method == 'POST':
-                response = requests.post(url, json=data, headers=headers, timeout=30)
+                response = requests.post(url, json=data, headers=default_headers, timeout=30)
 
             success = response.status_code == expected_status
             if success:
@@ -74,17 +78,37 @@ class PortfolioAPITester:
     def test_book_appointment(self):
         """Test booking an appointment"""
         tomorrow = (datetime.now() + timedelta(days=1)).strftime('%Y-%m-%d')
+        
+        # First get available slots
+        success, slots_response = self.run_test(
+            "Get Available Slots for Booking", 
+            "GET", 
+            "appointments/available", 
+            200, 
+            params={"date": tomorrow}
+        )
+        
+        if not success or not slots_response.get('available_slots'):
+            print("❌ No available slots found for booking test")
+            return False, {}
+        
+        # Use the first available slot
+        available_time = slots_response['available_slots'][0]
+        
         appointment_data = {
-            "name": "Test User",
-            "email": "test@example.com",
-            "company": "Test Company",
+            "name": "Test User Booking",
+            "email": "testbooking@example.com",
+            "company": "Test Booking Company",
             "date": tomorrow,
-            "time": "10:00",
+            "time": available_time,
             "topic": "strategy",
             "notes": "This is a test appointment booking.",
             "language": "en"
         }
-        return self.run_test("Book Appointment", "POST", "appointments", 200, appointment_data)
+        success, response = self.run_test("Book Appointment", "POST", "appointments", 200, appointment_data)
+        if success and 'appointment_id' in response:
+            self.test_appointment_id = response['appointment_id']
+        return success, response
 
     def test_ai_chat(self):
         """Test AI chat functionality"""
@@ -99,6 +123,49 @@ class PortfolioAPITester:
         """Test getting contacts (admin endpoint)"""
         return self.run_test("Get Contacts", "GET", "contacts", 200)
 
+    def test_lead_magnet(self):
+        """Test lead magnet form submission"""
+        lead_data = {
+            "name": "Test Lead",
+            "email": "testlead@example.com",
+            "company": "Test Lead Company",
+            "language": "en"
+        }
+        return self.run_test("Lead Magnet Submission", "POST", "leads", 200, lead_data)
+
+    def test_admin_login(self):
+        """Test admin login"""
+        login_data = {
+            "password": "admin2026!"
+        }
+        success, response = self.run_test("Admin Login", "POST", "admin/login", 200, login_data)
+        if success and 'token' in response:
+            self.admin_token = response['token']
+        return success, response
+
+    def test_admin_stats(self):
+        """Test admin stats endpoint (requires auth)"""
+        if not self.admin_token:
+            print("❌ Admin token not available, skipping admin stats test")
+            return False, {}
+        
+        headers = {"x-admin-token": self.admin_token}
+        return self.run_test("Admin Stats", "GET", "admin/stats", 200, headers=headers)
+
+    def test_calendar_download(self):
+        """Test ICS calendar download"""
+        if not self.test_appointment_id:
+            print("❌ No appointment ID available, skipping calendar download test")
+            return False, {}
+        
+        success, response = self.run_test(
+            "Calendar ICS Download", 
+            "GET", 
+            f"appointments/{self.test_appointment_id}/calendar", 
+            200
+        )
+        return success, response
+
 def main():
     print("🚀 Starting Portfolio API Tests...")
     print("=" * 60)
@@ -111,8 +178,12 @@ def main():
         tester.test_contact_form,
         tester.test_available_appointments,
         tester.test_book_appointment,
+        tester.test_calendar_download,  # Test ICS download after booking
         tester.test_ai_chat,
         tester.test_get_contacts,
+        tester.test_lead_magnet,  # New Phase 2 feature
+        tester.test_admin_login,  # New Phase 2 feature
+        tester.test_admin_stats,  # New Phase 2 feature (requires login)
     ]
     
     for test in tests:

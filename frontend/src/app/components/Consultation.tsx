@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Calendar, Loader2, CheckCircle, Clock } from "lucide-react";
+import { Calendar, Loader2, CheckCircle, Clock, Download } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 import { Input } from "./ui/input";
@@ -17,6 +17,7 @@ export function Consultation() {
   const [isLoading, setIsLoading] = useState(false);
   const [isBooking, setIsBooking] = useState(false);
   const [booked, setBooked] = useState(false);
+  const [appointmentId, setAppointmentId] = useState("");
   const [error, setError] = useState("");
 
   const topics = [
@@ -60,6 +61,8 @@ export function Consultation() {
         const data = await res.json();
         throw new Error(data.detail || "Failed");
       }
+      const result = await res.json();
+      setAppointmentId(result.appointment_id);
       setBooked(true);
     } catch (err: any) {
       setError(err.message || t("consultation.errorMessage"));
@@ -81,6 +84,16 @@ export function Consultation() {
             <Calendar className="w-5 h-5" />
             <span className="font-medium">{form.date} - {form.time}</span>
           </div>
+          {appointmentId && (
+            <div className="mt-4">
+              <a href={`${API_BASE}/appointments/${appointmentId}/calendar`} download>
+                <Button variant="outline" className="gap-2" data-testid="consultation-download-ics">
+                  <Download className="w-4 h-4" />
+                  {t("consultation.addToCalendar")}
+                </Button>
+              </a>
+            </div>
+          )}
         </div>
       </div>
     );

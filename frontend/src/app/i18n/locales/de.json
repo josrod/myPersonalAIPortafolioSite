@@ -146,6 +146,7 @@
     "successTitle": "Beratung gebucht!",
     "successMessage": "Ihre Beratung wurde bestaetigt. Wir senden eine Bestaetigung an Ihre E-Mail.",
     "errorMessage": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut.",
+    "addToCalendar": "Zum Kalender hinzufuegen",
     "noSlots": "Keine verfuegbaren Zeitfenster fuer dieses Datum",
     "selectDate": "Waehlen Sie ein Datum, um verfuegbare Zeiten zu sehen",
     "topics": {
@@ -206,5 +207,45 @@
     "description": "Ups! Die gesuchte Seite existiert nicht.",
     "goHome": "Zur Startseite",
     "goBack": "Zurueck"
+  },
+  "testimonials": {
+    "title": "Was Unsere Kunden Sagen",
+    "subtitle": "Vertraut von zukunftsorientierten Unternehmen weltweit",
+    "t1Name": "Maria Gonzalez",
+    "t1Role": "CTO, FinTech Solutions",
+    "t1Text": "Die AI-Strategie-Roadmap hat unseren Ansatz zur Datenverarbeitung transformiert. Wir haben manuelle Arbeit um 60% reduziert.",
+    "t2Name": "Stefan Richter",
+    "t2Role": "VP Engineering, LogiTech GmbH",
+    "t2Text": "Ihre Expertise in AI-Integration war genau das, was wir brauchten. Sie haben unsere Legacy-Systeme nahtlos mit modernen ML-Faehigkeiten verbunden.",
+    "t3Name": "Lucas Ferreira",
+    "t3Role": "Produktdirektor, DataViz Inc",
+    "t3Text": "Das Sport-Analytics-Dashboard verarbeitet Millionen von Datenpunkten in Echtzeit. Unsere Nutzer lieben die intuitiven Visualisierungen.",
+    "t4Name": "Ana Delgado",
+    "t4Role": "CEO, SmartHome Labs",
+    "t4Text": "Vom Konzept zur Produktion in nur 8 Wochen. Ihr AI-gestuetzter Entwicklungsansatz hat unsere Time-to-Market dramatisch beschleunigt."
+  },
+  "leadMagnet": {
+    "badge": "Kostenloser Leitfaden",
+    "title": "5 Schritte zur AI-Integration in Ihrem Unternehmen",
+    "subtitle": "Ein praktischer Leitfaden mit umsetzbaren Strategien zur Identifizierung von AI-Chancen.",
+    "step1": "Pruefen Sie Ihre aktuellen Prozesse auf AI-Chancen",
+    "step2": "Definieren Sie klare Erfolgskennzahlen und KPIs",
+    "step3": "Waehlen Sie die richtigen AI-Technologien fuer Ihren Anwendungsfall",
+    "step4": "Erstellen Sie eine phasenweise Implementierungs-Roadmap",
+    "step5": "Messen, iterieren und intelligent skalieren",
+    "formTitle": "Kostenlosen Leitfaden erhalten",
+    "formSubtitle": "Geben Sie Ihre Daten ein fuer den sofortigen Download.",
+    "nameLabel": "Vollstaendiger Name",
+    "namePlaceholder": "Ihr Name",
+    "emailLabel": "E-Mail",
+    "emailPlaceholder": "ihre@email.com",
+    "companyLabel": "Unternehmen (optional)",
+    "companyPlaceholder": "Ihr Unternehmen",
+    "submitBtn": "Kostenlosen Leitfaden herunterladen",
+    "sending": "Verarbeitung...",
+    "successTitle": "Ihr Leitfaden ist bereit!",
+    "successMessage": "Klicken Sie auf die Schaltflaeche unten, um Ihre Kopie herunterzuladen.",
+    "downloadBtn": "PDF-Leitfaden herunterladen",
+    "errorMessage": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut."
   }
 }
