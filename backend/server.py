@@ -3,6 +3,7 @@ import io
 import uuid
 import asyncio
 import hashlib
+import logging
 from datetime import datetime, timezone, timedelta
 from dotenv import load_dotenv
 
@@ -16,6 +17,9 @@ from typing import Optional
 from motor.motor_asyncio import AsyncIOMotorClient
 from emergentintegrations.llm.chat import LlmChat, UserMessage
 from fpdf import FPDF
+import resend
+
+logger = logging.getLogger(__name__)
 
 app = FastAPI(title="AI Portfolio API")
 
@@ -31,6 +35,12 @@ MONGO_URL = os.environ.get("MONGO_URL")
 DB_NAME = os.environ.get("DB_NAME")
 EMERGENT_LLM_KEY = os.environ.get("EMERGENT_LLM_KEY")
 ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD", "admin2026!")
+RESEND_API_KEY = os.environ.get("RESEND_API_KEY")
+SENDER_EMAIL = os.environ.get("SENDER_EMAIL", "onboarding@resend.dev")
+ADMIN_EMAIL = os.environ.get("ADMIN_EMAIL", "onboarding@resend.dev")
+
+if RESEND_API_KEY:
+    resend.api_key = RESEND_API_KEY
 
 client = AsyncIOMotorClient(MONGO_URL)
 db = client[DB_NAME]
@@ -99,6 +109,78 @@ async def create_notification(notif_type: str, title: str, message: str, meta: d
         "created_at": datetime.now(timezone.utc).isoformat(),
     }
     await notifications_collection.insert_one(notif_doc)
+    # Send admin notification email
+    await send_admin_notification_email(title, message)
+
+
+async def send_email(to: str, subject: str, html: str):
+    if not RESEND_API_KEY:
+        print(f"[EMAIL] Skipped (no API key): to={to}")
+        return None
+    try:
+        params = {"from": SENDER_EMAIL, "to": [to], "subject": subject, "html": html}
+        result = await asyncio.to_thread(resend.Emails.send, params)
+        print(f"[EMAIL] Sent to {to}: {result.get('id', 'ok') if isinstance(result, dict) else result}")
+        return result
+    except Exception as e:
+        print(f"[EMAIL] Failed to {to}: {e}")
+        return None
+
+
+async def send_admin_notification_email(title: str, message: str):
+    html = f"""
+    <div style="font-family:system-ui,sans-serif;max-width:560px;margin:0 auto;padding:24px;">
+      <div style="background:#0f172a;color:white;padding:20px 24px;border-radius:12px 12px 0 0;">
+        <h2 style="margin:0;font-size:18px;">AI-First Consulting</h2>
+      </div>
+      <div style="border:1px solid #e2e8f0;border-top:none;padding:24px;border-radius:0 0 12px 12px;">
+        <h3 style="color:#1e293b;margin-top:0;">{title}</h3>
+        <pre style="color:#475569;white-space:pre-wrap;font-family:system-ui,sans-serif;font-size:14px;line-height:1.6;">{message}</pre>
+        <hr style="border:none;border-top:1px solid #e2e8f0;margin:20px 0;" />
+        <p style="color:#94a3b8;font-size:12px;margin:0;">This is an automated notification from your portfolio dashboard.</p>
+      </div>
+    </div>"""
+    await send_email(ADMIN_EMAIL, f"[AI-First] {title}", html)
+
+
+async def send_contact_confirmation(name: str, email: str):
+    html = f"""
+    <div style="font-family:system-ui,sans-serif;max-width:560px;margin:0 auto;padding:24px;">
+      <div style="background:linear-gradient(135deg,#3b82f6,#8b5cf6);color:white;padding:20px 24px;border-radius:12px 12px 0 0;">
+        <h2 style="margin:0;font-size:18px;">AI-First Consulting</h2>
+      </div>
+      <div style="border:1px solid #e2e8f0;border-top:none;padding:24px;border-radius:0 0 12px 12px;">
+        <h3 style="color:#1e293b;margin-top:0;">Thank you, {name}!</h3>
+        <p style="color:#475569;line-height:1.6;">We've received your message and will get back to you within 24 hours.</p>
+        <p style="color:#475569;line-height:1.6;">In the meantime, feel free to explore our AI-powered projects or chat with our AI assistant on the website.</p>
+        <hr style="border:none;border-top:1px solid #e2e8f0;margin:20px 0;" />
+        <p style="color:#94a3b8;font-size:12px;margin:0;">AI-First Consulting | Transforming Ideas into Intelligent Applications</p>
+      </div>
+    </div>"""
+    return await send_email(email, "We received your message - AI-First Consulting", html)
+
+
+async def send_appointment_confirmation(name: str, email: str, date: str, time: str, topic: str):
+    html = f"""
+    <div style="font-family:system-ui,sans-serif;max-width:560px;margin:0 auto;padding:24px;">
+      <div style="background:linear-gradient(135deg,#3b82f6,#8b5cf6);color:white;padding:20px 24px;border-radius:12px 12px 0 0;">
+        <h2 style="margin:0;font-size:18px;">Consultation Confirmed</h2>
+      </div>
+      <div style="border:1px solid #e2e8f0;border-top:none;padding:24px;border-radius:0 0 12px 12px;">
+        <h3 style="color:#1e293b;margin-top:0;">Hello {name},</h3>
+        <p style="color:#475569;line-height:1.6;">Your consultation has been confirmed:</p>
+        <div style="background:#f8fafc;border-radius:8px;padding:16px;margin:16px 0;">
+          <p style="margin:4px 0;color:#1e293b;"><strong>Date:</strong> {date}</p>
+          <p style="margin:4px 0;color:#1e293b;"><strong>Time:</strong> {time}</p>
+          <p style="margin:4px 0;color:#1e293b;"><strong>Topic:</strong> {topic}</p>
+          <p style="margin:4px 0;color:#1e293b;"><strong>Duration:</strong> 30 minutes</p>
+        </div>
+        <p style="color:#475569;line-height:1.6;">We look forward to speaking with you!</p>
+        <hr style="border:none;border-top:1px solid #e2e8f0;margin:20px 0;" />
+        <p style="color:#94a3b8;font-size:12px;margin:0;">AI-First Consulting | Transforming Ideas into Intelligent Applications</p>
+      </div>
+    </div>"""
+    return await send_email(email, f"Consultation Confirmed - {date} at {time}", html)
 
 
 def generate_lead_magnet_pdf():
@@ -303,11 +385,17 @@ async def submit_contact(form: ContactForm):
         f"Subject: {form.subject}\nFrom: {form.email}\nCompany: {form.company or 'N/A'}",
         {"contact_id": contact_id, "email": form.email},
     )
+    email_sent = False
+    if RESEND_API_KEY:
+        result = await send_contact_confirmation(form.name, form.email)
+        email_sent = result is not None
+        if email_sent:
+            await contacts_collection.update_one({"contact_id": contact_id}, {"$set": {"email_sent": True}})
     return {
         "status": "success",
         "contact_id": contact_id,
         "message": "Contact form submitted successfully. We will get back to you soon.",
-        "email_sent": False,
+        "email_sent": email_sent,
     }
 
 
@@ -355,6 +443,8 @@ async def create_appointment(form: AppointmentForm):
         f"Date: {form.date} at {form.time}\nTopic: {topic_labels.get(form.topic, form.topic)}\nEmail: {form.email}",
         {"appointment_id": appointment_id, "email": form.email, "date": form.date, "time": form.time},
     )
+    if RESEND_API_KEY:
+        await send_appointment_confirmation(form.name, form.email, form.date, form.time, topic_labels.get(form.topic, form.topic))
     return {
         "status": "success",
         "appointment_id": appointment_id,

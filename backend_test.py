@@ -55,16 +55,26 @@ class PortfolioAPITester:
         return self.run_test("Health Check", "GET", "health", 200)
 
     def test_contact_form(self):
-        """Test contact form submission"""
+        """Test contact form submission with email integration (Phase 5)"""
         contact_data = {
             "name": "Test User",
-            "email": "test@example.com",
+            "email": "onboarding@resend.dev",  # Use verified email for Resend testing
             "company": "Test Company",
-            "subject": "Test Subject",
-            "message": "This is a test message for the contact form.",
+            "subject": "Test Subject - Phase 5 Email Integration",
+            "message": "This is a test message for the contact form with email integration.",
             "language": "en"
         }
-        return self.run_test("Contact Form Submission", "POST", "contact", 200, contact_data)
+        success, response = self.run_test("Contact Form Submission with Email", "POST", "contact", 200, contact_data)
+        
+        # Phase 5: Verify email_sent field is present and true
+        if success:
+            email_sent = response.get('email_sent', False)
+            if email_sent:
+                print(f"✅ Email integration working - email_sent: {email_sent}")
+            else:
+                print(f"⚠️  Email not sent - email_sent: {email_sent}")
+        
+        return success, response
 
     def test_available_appointments(self):
         """Test getting available appointment slots"""
@@ -78,7 +88,7 @@ class PortfolioAPITester:
         )
 
     def test_book_appointment(self):
-        """Test booking an appointment"""
+        """Test booking an appointment with email confirmation (Phase 5)"""
         tomorrow = (datetime.now() + timedelta(days=1)).strftime('%Y-%m-%d')
         
         # First get available slots
@@ -99,17 +109,18 @@ class PortfolioAPITester:
         
         appointment_data = {
             "name": "Test User Booking",
-            "email": "testbooking@example.com",
+            "email": "onboarding@resend.dev",  # Use verified email for Resend testing
             "company": "Test Booking Company",
             "date": tomorrow,
             "time": available_time,
             "topic": "strategy",
-            "notes": "This is a test appointment booking.",
+            "notes": "This is a test appointment booking with email confirmation.",
             "language": "en"
         }
-        success, response = self.run_test("Book Appointment", "POST", "appointments", 200, appointment_data)
+        success, response = self.run_test("Book Appointment with Email Confirmation", "POST", "appointments", 200, appointment_data)
         if success and 'appointment_id' in response:
             self.test_appointment_id = response['appointment_id']
+            print(f"✅ Appointment confirmation email should be sent to {appointment_data['email']}")
         return success, response
 
     def test_ai_chat(self):
@@ -126,14 +137,19 @@ class PortfolioAPITester:
         return self.run_test("Get Contacts", "GET", "contacts", 200)
 
     def test_lead_magnet(self):
-        """Test lead magnet form submission"""
+        """Test lead magnet form submission with admin notification email (Phase 5)"""
         lead_data = {
-            "name": "Test Lead",
-            "email": "testlead@example.com",
+            "name": "Test Lead Phase 5",
+            "email": "onboarding@resend.dev",  # Use verified email for Resend testing
             "company": "Test Lead Company",
             "language": "en"
         }
-        return self.run_test("Lead Magnet Submission", "POST", "leads", 200, lead_data)
+        success, response = self.run_test("Lead Magnet Submission with Email Notification", "POST", "leads", 200, lead_data)
+        
+        if success:
+            print(f"✅ Lead captured - Admin notification email should be sent")
+        
+        return success, response
 
     def test_admin_login(self):
         """Test admin login"""
@@ -227,6 +243,34 @@ class PortfolioAPITester:
         )
         return success, response
 
+    def test_resend_email_integration(self):
+        """Test Resend email integration specifically (Phase 5)"""
+        print("\n🔍 Testing Resend Email Integration...")
+        
+        # Test contact form with verified email
+        contact_data = {
+            "name": "Resend Test User",
+            "email": "onboarding@resend.dev",
+            "company": "Resend Test Company",
+            "subject": "Resend Integration Test",
+            "message": "Testing Resend email integration for Phase 5.",
+            "language": "en"
+        }
+        
+        success, response = self.run_test("Resend Email Integration Test", "POST", "contact", 200, contact_data)
+        
+        if success:
+            email_sent = response.get('email_sent', False)
+            if email_sent:
+                print(f"✅ Resend integration working - Confirmation email sent")
+                print(f"   Email should be delivered to: {contact_data['email']}")
+                return True, response
+            else:
+                print(f"❌ Resend integration issue - email_sent: {email_sent}")
+                return False, response
+        
+        return success, response
+
 def main():
     print("🚀 Starting Portfolio API Tests...")
     print("=" * 60)
@@ -236,13 +280,14 @@ def main():
     # Run all tests
     tests = [
         tester.test_health_check,
+        tester.test_resend_email_integration,  # Phase 5 - Test Resend integration first
         tester.test_contact_form,
         tester.test_available_appointments,
         tester.test_book_appointment,
         tester.test_calendar_download,  # Test ICS download after booking
         tester.test_ai_chat,
         tester.test_get_contacts,
-        tester.test_lead_magnet,  # Phase 2 feature
+        tester.test_lead_magnet,  # Phase 2 feature with Phase 5 email notifications
         tester.test_pdf_download,  # Phase 3 feature - PDF generation
         tester.test_admin_login,  # Phase 2 feature
         tester.test_admin_stats,  # Phase 2 feature (requires login)
