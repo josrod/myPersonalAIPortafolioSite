@@ -66,8 +66,8 @@ export function Testimonials() {
     <section className="py-20 px-4 sm:px-6 lg:px-8" data-testid="testimonials-section">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl text-slate-900 mb-4">{t("testimonials.title")}</h2>
-          <p className="text-xl text-slate-600">{t("testimonials.subtitle")}</p>
+          <h2 className="text-4xl text-slate-900 dark:text-white mb-4">{t("testimonials.title")}</h2>
+          <p className="text-xl text-slate-600 dark:text-slate-400">{t("testimonials.subtitle")}</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
@@ -82,7 +82,7 @@ export function Testimonials() {
                 transitionDelay: `${index * 150}ms`,
               }}
             >
-              <Card className="p-8 h-full relative overflow-hidden group hover:shadow-xl transition-shadow duration-300">
+              <Card className="p-8 h-full relative overflow-hidden group hover:shadow-xl transition-shadow duration-300 dark:bg-slate-800/50 dark:border-slate-700">
                 <div className="absolute top-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity">
                   <Quote className="w-16 h-16 text-blue-600" />
                 </div>
@@ -91,7 +91,7 @@ export function Testimonials() {
                     <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
                   ))}
                 </div>
-                <p className="text-slate-600 leading-relaxed mb-6 relative z-10">
+                <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-6 relative z-10">
                   "{t(item.textKey)}"
                 </p>
                 <div className="flex items-center gap-3">
@@ -99,8 +99,8 @@ export function Testimonials() {
                     {item.avatar}
                   </div>
                   <div>
-                    <p className="font-medium text-slate-900 text-sm">{t(item.nameKey)}</p>
-                    <p className="text-slate-500 text-xs">{t(item.roleKey)}</p>
+                    <p className="font-medium text-slate-900 dark:text-white text-sm">{t(item.nameKey)}</p>
+                    <p className="text-slate-500 dark:text-slate-400 text-xs">{t(item.roleKey)}</p>
                   </div>
                 </div>
               </Card>

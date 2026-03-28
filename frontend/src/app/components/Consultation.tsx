@@ -103,8 +103,8 @@ export function Consultation() {
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8" data-testid="consultation-page">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h1 className="text-5xl text-slate-900 mb-4">{t("consultation.title")}</h1>
-          <p className="text-xl text-slate-600">{t("consultation.subtitle")}</p>
+          <h1 className="text-5xl text-slate-900 dark:text-white mb-4">{t("consultation.title")}</h1>
+          <p className="text-xl text-slate-600 dark:text-slate-400">{t("consultation.subtitle")}</p>
         </div>
 
         <Card className="p-8">

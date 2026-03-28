@@ -28,6 +28,8 @@ class PortfolioAPITester:
                 response = requests.get(url, headers=default_headers, params=params, timeout=30)
             elif method == 'POST':
                 response = requests.post(url, json=data, headers=default_headers, timeout=30)
+            elif method == 'PUT':
+                response = requests.put(url, json=data, headers=default_headers, timeout=30)
 
             success = response.status_code == expected_status
             if success:
@@ -152,6 +154,65 @@ class PortfolioAPITester:
         headers = {"x-admin-token": self.admin_token}
         return self.run_test("Admin Stats", "GET", "admin/stats", 200, headers=headers)
 
+    def test_pdf_download(self):
+        """Test PDF guide download (Phase 3 feature)"""
+        success, response = self.run_test("PDF Guide Download", "GET", "leads/guide-pdf", 200)
+        return success, response
+
+    def test_admin_notifications(self):
+        """Test admin notifications endpoint (Phase 3 feature)"""
+        if not self.admin_token:
+            print("❌ Admin token not available, skipping admin notifications test")
+            return False, {}
+        
+        headers = {"x-admin-token": self.admin_token}
+        return self.run_test("Admin Notifications", "GET", "admin/notifications", 200, headers=headers)
+
+    def test_mark_notification_read(self):
+        """Test marking notification as read (Phase 3 feature)"""
+        if not self.admin_token:
+            print("❌ Admin token not available, skipping mark notification read test")
+            return False, {}
+        
+        # First get notifications to find one to mark as read
+        headers = {"x-admin-token": self.admin_token}
+        success, response = self.run_test("Get Notifications for Read Test", "GET", "admin/notifications", 200, headers=headers)
+        
+        if not success or not response.get('notifications'):
+            print("❌ No notifications found to mark as read")
+            return False, {}
+        
+        # Find an unread notification
+        unread_notif = None
+        for notif in response['notifications']:
+            if not notif.get('read', True):
+                unread_notif = notif
+                break
+        
+        if not unread_notif:
+            print("❌ No unread notifications found to test mark as read")
+            return False, {}
+        
+        # Mark it as read
+        notif_id = unread_notif['notification_id']
+        success, response = self.run_test(
+            f"Mark Notification {notif_id[:8]}... as Read", 
+            "PUT", 
+            f"admin/notifications/{notif_id}/read", 
+            200, 
+            headers=headers
+        )
+        return success, response
+
+    def test_mark_all_notifications_read(self):
+        """Test marking all notifications as read (Phase 3 feature)"""
+        if not self.admin_token:
+            print("❌ Admin token not available, skipping mark all notifications read test")
+            return False, {}
+        
+        headers = {"x-admin-token": self.admin_token}
+        return self.run_test("Mark All Notifications Read", "PUT", "admin/notifications/read-all", 200, headers=headers)
+
     def test_calendar_download(self):
         """Test ICS calendar download"""
         if not self.test_appointment_id:
@@ -181,9 +242,13 @@ def main():
         tester.test_calendar_download,  # Test ICS download after booking
         tester.test_ai_chat,
         tester.test_get_contacts,
-        tester.test_lead_magnet,  # New Phase 2 feature
-        tester.test_admin_login,  # New Phase 2 feature
-        tester.test_admin_stats,  # New Phase 2 feature (requires login)
+        tester.test_lead_magnet,  # Phase 2 feature
+        tester.test_pdf_download,  # Phase 3 feature - PDF generation
+        tester.test_admin_login,  # Phase 2 feature
+        tester.test_admin_stats,  # Phase 2 feature (requires login)
+        tester.test_admin_notifications,  # Phase 3 feature - Admin notifications
+        tester.test_mark_notification_read,  # Phase 3 feature - Mark notification read
+        tester.test_mark_all_notifications_read,  # Phase 3 feature - Mark all read
     ]
     
     for test in tests:

@@ -29,8 +29,8 @@ export function About() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl text-slate-900 mb-4">{t("about.title")}</h1>
-          <p className="text-xl text-slate-600">
+          <h1 className="text-5xl text-slate-900 dark:text-white mb-4">{t("about.title")}</h1>
+          <p className="text-xl text-slate-600 dark:text-slate-400">
             {t("about.subtitle")}
           </p>
         </div>

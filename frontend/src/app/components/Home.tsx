@@ -24,16 +24,16 @@ export function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-              <div className="inline-block px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-sm">
+              <div className="inline-block px-4 py-2 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full text-sm">
                 {t("home.badge")}
               </div>
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl text-slate-900">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl text-slate-900 dark:text-white">
                 {t("home.title")}{" "}
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   {t("home.titleHighlight")}
                 </span>
               </h1>
-              <p className="text-xl text-slate-600 leading-relaxed">
+              <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
                 {t("home.subtitle")}
               </p>
               <div className="flex flex-wrap gap-4">
@@ -68,20 +68,20 @@ export function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white" data-testid="features-section">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-900/50" data-testid="features-section">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl text-slate-900 mb-4">{t("home.featuresTitle")}</h2>
-            <p className="text-xl text-slate-600">{t("home.featuresSubtitle")}</p>
+            <h2 className="text-4xl text-slate-900 dark:text-white mb-4">{t("home.featuresTitle")}</h2>
+            <p className="text-xl text-slate-600 dark:text-slate-400">{t("home.featuresSubtitle")}</p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
-              <Card key={index} className="p-6 hover:shadow-lg transition-shadow duration-300">
+              <Card key={index} className="p-6 hover:shadow-lg transition-shadow duration-300 dark:bg-slate-800/50 dark:border-slate-700">
                 <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center mb-4">
                   <feature.icon className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl text-slate-900 mb-2">{feature.title}</h3>
-                <p className="text-slate-600">{feature.description}</p>
+                <h3 className="text-xl text-slate-900 dark:text-white mb-2">{feature.title}</h3>
+                <p className="text-slate-600 dark:text-slate-400">{feature.description}</p>
               </Card>
             ))}
           </div>

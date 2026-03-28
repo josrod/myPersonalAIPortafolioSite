@@ -77,10 +77,12 @@ export function LeadMagnet() {
                   </div>
                   <h4 className="text-xl text-slate-900 mb-2">{t("leadMagnet.successTitle")}</h4>
                   <p className="text-slate-600 text-sm mb-6">{t("leadMagnet.successMessage")}</p>
-                  <Button variant="outline" className="gap-2" data-testid="lead-magnet-download-btn">
-                    <Download className="w-4 h-4" />
-                    {t("leadMagnet.downloadBtn")}
-                  </Button>
+                  <a href="/api/leads/guide-pdf" download target="_blank">
+                    <Button variant="outline" className="gap-2" data-testid="lead-magnet-download-btn">
+                      <Download className="w-4 h-4" />
+                      {t("leadMagnet.downloadBtn")}
+                    </Button>
+                  </a>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="w-full space-y-5" data-testid="lead-magnet-form">

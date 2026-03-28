@@ -54,14 +54,14 @@ export function Contact() {
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8" data-testid="contact-page">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h1 className="text-5xl text-slate-900 mb-4">{t("contact.title")}</h1>
-          <p className="text-xl text-slate-600">{t("contact.subtitle")}</p>
+          <h1 className="text-5xl text-slate-900 dark:text-white mb-4">{t("contact.title")}</h1>
+          <p className="text-xl text-slate-600 dark:text-slate-400">{t("contact.subtitle")}</p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-12">
           <div className="lg:col-span-2">
             <Card className="p-8">
-              <form onSubmit={handleSubmit} className="space-y-6" data-testid="contact-form">
+              <form onSubmit={handleSubmit} className="space-y-6 dark:text-slate-200" data-testid="contact-form">
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>
                     <Label htmlFor="name">{t("contact.nameLabel")}</Label>
