@@ -18,7 +18,7 @@ export function About() {
   ];
 
   const stats = [
-    { icon: Brain, label: t("about.stat1Label"), value: "7+" },
+    { icon: Brain, label: t("about.stat1Label"), value: "8+" },
     { icon: Code, label: t("about.stat2Label"), value: "25+" },
     { icon: TrendingUp, label: t("about.stat3Label"), value: "1M+" },
     { icon: Zap, label: t("about.stat4Label"), value: "40%" },
