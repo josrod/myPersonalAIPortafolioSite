@@ -60,7 +60,7 @@ export function LeadMagnet() {
               <p className="text-slate-300 mb-6 text-sm leading-relaxed">{t("leadMagnet.subtitle")}</p>
               <ul className="space-y-3">
                 {guideSteps.map((step, i) => (
-                  <li key={i} className="flex items-start gap-3 text-sm">
+                  <li key={`step-${i + 1}`} className="flex items-start gap-3 text-sm">
                     <span className="w-6 h-6 rounded-full bg-blue-500/20 text-blue-300 flex items-center justify-center shrink-0 mt-0.5 text-xs font-semibold">{i + 1}</span>
                     <span className="text-slate-200">{step}</span>
                   </li>

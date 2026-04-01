@@ -9,7 +9,10 @@ import { useTranslation } from "react-i18next";
 
 type ProblemType = "math" | "coding" | "logic" | "general" | "optimization";
 
+const AI_PROCESSING_DELAY_MS = 1500;
+
 interface Solution {
+  id: string;
   problem: string;
   type: ProblemType;
   solution: string;
@@ -30,8 +33,7 @@ export function AIApp() {
 
     setIsLoading(true);
 
-    // Simulate AI processing
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    await new Promise((resolve) => setTimeout(resolve, AI_PROCESSING_DELAY_MS));
 
     const newSolution = generateSolution(problem, problemType);
     setSolution(newSolution);
@@ -107,6 +109,7 @@ export function AIApp() {
     const solutionData = solutions[type];
 
     return {
+      id: `sol-${Date.now()}`,
       problem: problemText,
       type,
       solution: solutionData.solution,
@@ -224,7 +227,7 @@ export function AIApp() {
                     <div className="space-y-3">
                       {solution.steps.map((step, index) => (
                         <div
-                          key={index}
+                          key={`step-${index}`}
                           className="flex gap-4 items-start bg-white p-4 rounded-lg"
                         >
                           <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 text-white rounded-full flex items-center justify-center">
@@ -268,9 +271,9 @@ export function AIApp() {
               <Card className="p-6">
                 <h3 className="text-xl text-slate-900 mb-4">Recent Solutions</h3>
                 <div className="space-y-3">
-                  {history.slice(0, 5).map((item, index) => (
+                  {history.slice(0, 5).map((item) => (
                     <button
-                      key={index}
+                      key={item.id}
                       onClick={() => setSolution(item)}
                       className="w-full text-left p-3 rounded-lg hover:bg-slate-50 transition-colors border border-slate-200"
                     >

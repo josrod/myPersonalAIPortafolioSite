@@ -10,6 +10,26 @@ import { useTranslation } from "react-i18next";
 
 const API_BASE = "/api";
 
+function TimeSlotsDisplay({ date, isLoading, slots, selectedTime, onSelect, t }: {
+  date: string; isLoading: boolean; slots: string[]; selectedTime: string;
+  onSelect: (slot: string) => void; t: (key: string) => string;
+}) {
+  if (!date) return <p className="text-sm text-slate-500 mt-2">{t("consultation.selectDate")}</p>;
+  if (isLoading) return <div className="flex items-center gap-2 mt-2 text-slate-500"><Loader2 className="w-4 h-4 animate-spin" /></div>;
+  if (slots.length === 0) return <p className="text-sm text-red-500 mt-2">{t("consultation.noSlots")}</p>;
+  return (
+    <div className="grid grid-cols-3 gap-2 mt-1">
+      {slots.map((slot) => (
+        <button key={slot} type="button" data-testid={`time-slot-${slot}`} onClick={() => onSelect(slot)}
+          className={`flex items-center justify-center gap-1 px-3 py-2 rounded-lg text-sm border transition-colors ${
+            selectedTime === slot ? "bg-blue-600 text-white border-blue-600" : "bg-white text-slate-700 border-slate-200 hover:border-blue-300 hover:bg-blue-50"
+          }`}
+        ><Clock className="w-3 h-3" />{slot}</button>
+      ))}
+    </div>
+  );
+}
+
 export function Consultation() {
   const { t, i18n } = useTranslation();
   const [form, setForm] = useState({ name: "", email: "", company: "", date: "", time: "", topic: "", notes: "" });
@@ -29,16 +49,18 @@ export function Consultation() {
     { value: "other", label: t("consultation.topics.other") },
   ];
 
+  const selectedDate = form.date;
+
   useEffect(() => {
-    if (form.date) {
+    if (selectedDate) {
       setIsLoading(true);
-      fetch(`${API_BASE}/appointments/available?date=${form.date}`)
+      fetch(`${API_BASE}/appointments/available?date=${selectedDate}`)
         .then((r) => r.json())
         .then((data) => setAvailableSlots(data.available_slots || []))
         .catch(() => setAvailableSlots([]))
         .finally(() => setIsLoading(false));
     }
-  }, [form.date]);
+  }, [selectedDate]);
 
   const getMinDate = () => {
     const tomorrow = new Date();
@@ -178,34 +200,14 @@ export function Consultation() {
               </div>
               <div>
                 <Label>{t("consultation.timeLabel")}</Label>
-                {!form.date ? (
-                  <p className="text-sm text-slate-500 mt-2">{t("consultation.selectDate")}</p>
-                ) : isLoading ? (
-                  <div className="flex items-center gap-2 mt-2 text-slate-500">
-                    <Loader2 className="w-4 h-4 animate-spin" />
-                  </div>
-                ) : availableSlots.length === 0 ? (
-                  <p className="text-sm text-red-500 mt-2">{t("consultation.noSlots")}</p>
-                ) : (
-                  <div className="grid grid-cols-3 gap-2 mt-1">
-                    {availableSlots.map((slot) => (
-                      <button
-                        key={slot}
-                        type="button"
-                        data-testid={`time-slot-${slot}`}
-                        onClick={() => setForm({ ...form, time: slot })}
-                        className={`flex items-center justify-center gap-1 px-3 py-2 rounded-lg text-sm border transition-colors ${
-                          form.time === slot
-                            ? "bg-blue-600 text-white border-blue-600"
-                            : "bg-white text-slate-700 border-slate-200 hover:border-blue-300 hover:bg-blue-50"
-                        }`}
-                      >
-                        <Clock className="w-3 h-3" />
-                        {slot}
-                      </button>
-                    ))}
-                  </div>
-                )}
+                <TimeSlotsDisplay
+                  date={form.date}
+                  isLoading={isLoading}
+                  slots={availableSlots}
+                  selectedTime={form.time}
+                  onSelect={(slot) => setForm({ ...form, time: slot })}
+                  t={t}
+                />
               </div>
             </div>
 

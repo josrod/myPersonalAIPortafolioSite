@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { Sun, Moon } from "lucide-react";
 
 export function ThemeToggle() {
@@ -20,10 +20,12 @@ export function ThemeToggle() {
     }
   }, [dark]);
 
+  const toggle = useCallback(() => setDark((prev) => !prev), []);
+
   return (
     <button
       data-testid="theme-toggle-btn"
-      onClick={() => setDark(!dark)}
+      onClick={toggle}
       className="inline-flex items-center justify-center w-9 h-9 rounded-md border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 shadow-sm hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
       aria-label="Toggle dark mode"
     >

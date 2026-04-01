@@ -4,34 +4,10 @@ import { Card } from "./ui/card";
 import { useTranslation } from "react-i18next";
 
 const testimonials = [
-  {
-    nameKey: "testimonials.t1Name",
-    roleKey: "testimonials.t1Role",
-    textKey: "testimonials.t1Text",
-    rating: 5,
-    avatar: "MC",
-  },
-  {
-    nameKey: "testimonials.t2Name",
-    roleKey: "testimonials.t2Role",
-    textKey: "testimonials.t2Text",
-    rating: 5,
-    avatar: "SR",
-  },
-  {
-    nameKey: "testimonials.t3Name",
-    roleKey: "testimonials.t3Role",
-    textKey: "testimonials.t3Text",
-    rating: 5,
-    avatar: "LW",
-  },
-  {
-    nameKey: "testimonials.t4Name",
-    roleKey: "testimonials.t4Role",
-    textKey: "testimonials.t4Text",
-    rating: 5,
-    avatar: "AK",
-  },
+  { id: "mc", nameKey: "testimonials.t1Name", roleKey: "testimonials.t1Role", textKey: "testimonials.t1Text", rating: 5, avatar: "MC" },
+  { id: "sr", nameKey: "testimonials.t2Name", roleKey: "testimonials.t2Role", textKey: "testimonials.t2Text", rating: 5, avatar: "SR" },
+  { id: "lw", nameKey: "testimonials.t3Name", roleKey: "testimonials.t3Role", textKey: "testimonials.t3Text", rating: 5, avatar: "LW" },
+  { id: "ak", nameKey: "testimonials.t4Name", roleKey: "testimonials.t4Role", textKey: "testimonials.t4Text", rating: 5, avatar: "AK" },
 ];
 
 export function Testimonials() {
@@ -40,10 +16,11 @@ export function Testimonials() {
   const refs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
+    const currentRefs = refs.current;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          const idx = refs.current.indexOf(entry.target as HTMLDivElement);
+          const idx = currentRefs.indexOf(entry.target as HTMLDivElement);
           if (idx !== -1 && entry.isIntersecting) {
             setVisible((prev) => {
               const next = [...prev];
@@ -56,7 +33,7 @@ export function Testimonials() {
       { threshold: 0.2 }
     );
 
-    refs.current.forEach((ref) => {
+    currentRefs.forEach((ref) => {
       if (ref) observer.observe(ref);
     });
     return () => observer.disconnect();
@@ -73,7 +50,7 @@ export function Testimonials() {
         <div className="grid md:grid-cols-2 gap-8">
           {testimonials.map((item, index) => (
             <div
-              key={index}
+              key={item.id}
               ref={(el) => { refs.current[index] = el; }}
               className="transition-all duration-700 ease-out"
               style={{
@@ -88,7 +65,7 @@ export function Testimonials() {
                 </div>
                 <div className="flex gap-1 mb-4">
                   {Array.from({ length: item.rating }).map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                    <Star key={`star-${item.id}-${i}`} className="w-4 h-4 fill-amber-400 text-amber-400" />
                   ))}
                 </div>
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-6 relative z-10">

@@ -1,12 +1,18 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { MessageSquare, Send, X, Loader2, Bot, User } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const API_BASE = "/api";
 
 interface Message {
+  id: string;
   role: "user" | "assistant";
   content: string;
+}
+
+let msgCounter = 0;
+function createMsgId(role: string): string {
+  return `${role}-${Date.now()}-${++msgCounter}`;
 }
 
 export function ChatWidget() {
@@ -18,10 +24,12 @@ export function ChatWidget() {
   const [sessionId] = useState(() => `chat_${Date.now()}_${Math.random().toString(36).slice(2)}`);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const hasInitRef = useRef(false);
 
   useEffect(() => {
-    if (isOpen && messages.length === 0) {
-      setMessages([{ role: "assistant", content: t("chat.welcome") }]);
+    if (isOpen && !hasInitRef.current) {
+      hasInitRef.current = true;
+      setMessages([{ id: createMsgId("assistant"), role: "assistant", content: t("chat.welcome") }]);
     }
   }, [isOpen, t]);
 
@@ -30,14 +38,16 @@ export function ChatWidget() {
   }, [messages]);
 
   useEffect(() => {
-    if (isOpen) inputRef.current?.focus();
+    if (isOpen) {
+      inputRef.current?.focus();
+    }
   }, [isOpen]);
 
-  const sendMessage = async () => {
+  const sendMessage = useCallback(async () => {
     if (!input.trim() || isLoading) return;
     const userMsg = input.trim();
     setInput("");
-    setMessages((prev) => [...prev, { role: "user", content: userMsg }]);
+    setMessages((prev) => [...prev, { id: createMsgId("user"), role: "user", content: userMsg }]);
     setIsLoading(true);
 
     try {
@@ -48,24 +58,23 @@ export function ChatWidget() {
       });
       if (!res.ok) throw new Error("Failed");
       const data = await res.json();
-      setMessages((prev) => [...prev, { role: "assistant", content: data.response }]);
+      setMessages((prev) => [...prev, { id: createMsgId("assistant"), role: "assistant", content: data.response }]);
     } catch {
-      setMessages((prev) => [...prev, { role: "assistant", content: t("chat.error") }]);
+      setMessages((prev) => [...prev, { id: createMsgId("assistant"), role: "assistant", content: t("chat.error") }]);
     } finally {
       setIsLoading(false);
     }
-  };
+  }, [input, isLoading, sessionId, i18n.language, t]);
 
-  const handleKeyDown = (e: React.KeyboardEvent) => {
+  const handleKeyDown = useCallback((e: React.KeyboardEvent) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
       sendMessage();
     }
-  };
+  }, [sendMessage]);
 
   return (
     <>
-      {/* Floating Button */}
       {!isOpen && (
         <button
           data-testid="chat-widget-toggle"
@@ -76,7 +85,6 @@ export function ChatWidget() {
         </button>
       )}
 
-      {/* Chat Panel */}
       {isOpen && (
         <div
           data-testid="chat-widget-panel"
@@ -102,15 +110,15 @@ export function ChatWidget() {
 
           {/* Messages */}
           <div className="flex-1 overflow-y-auto p-4 space-y-3 min-h-0" style={{ maxHeight: "340px" }}>
-            {messages.map((msg, i) => (
-              <div key={i} className={`flex gap-2 ${msg.role === "user" ? "justify-end" : "justify-start"}`}>
+            {messages.map((msg) => (
+              <div key={msg.id} className={`flex gap-2 ${msg.role === "user" ? "justify-end" : "justify-start"}`}>
                 {msg.role === "assistant" && (
                   <div className="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center shrink-0 mt-1">
                     <Bot className="w-4 h-4 text-blue-600" />
                   </div>
                 )}
                 <div
-                  data-testid={`chat-message-${msg.role}-${i}`}
+                  data-testid={`chat-message-${msg.id}`}
                   className={`max-w-[75%] px-3 py-2 rounded-xl text-sm leading-relaxed ${
                     msg.role === "user"
                       ? "bg-blue-600 text-white rounded-br-sm"

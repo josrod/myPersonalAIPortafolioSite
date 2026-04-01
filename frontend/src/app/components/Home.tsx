@@ -11,10 +11,10 @@ export function Home() {
   const { t } = useTranslation();
 
   const features = [
-    { icon: Brain, title: t("home.feature1Title"), description: t("home.feature1Desc") },
-    { icon: TrendingUp, title: t("home.feature2Title"), description: t("home.feature2Desc") },
-    { icon: Users, title: t("home.feature3Title"), description: t("home.feature3Desc") },
-    { icon: Sparkles, title: t("home.feature4Title"), description: t("home.feature4Desc") },
+    { id: "intelligence", icon: Brain, title: t("home.feature1Title"), description: t("home.feature1Desc") },
+    { id: "decisions", icon: TrendingUp, title: t("home.feature2Title"), description: t("home.feature2Desc") },
+    { id: "collab", icon: Users, title: t("home.feature3Title"), description: t("home.feature3Desc") },
+    { id: "dev", icon: Sparkles, title: t("home.feature4Title"), description: t("home.feature4Desc") },
   ];
 
   return (
@@ -75,8 +75,8 @@ export function Home() {
             <p className="text-xl text-slate-600 dark:text-slate-400">{t("home.featuresSubtitle")}</p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {features.map((feature, index) => (
-              <Card key={index} className="p-6 hover:shadow-lg transition-shadow duration-300 dark:bg-slate-800/50 dark:border-slate-700">
+            {features.map((feature) => (
+              <Card key={feature.id} className="p-6 hover:shadow-lg transition-shadow duration-300 dark:bg-slate-800/50 dark:border-slate-700">
                 <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center mb-4">
                   <feature.icon className="w-6 h-6 text-white" />
                 </div>

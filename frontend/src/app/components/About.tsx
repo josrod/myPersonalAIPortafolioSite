@@ -18,10 +18,10 @@ export function About() {
   ];
 
   const stats = [
-    { icon: Brain, label: t("about.stat1Label"), value: "8+" },
-    { icon: Code, label: t("about.stat2Label"), value: "25+" },
-    { icon: TrendingUp, label: t("about.stat3Label"), value: "1M+" },
-    { icon: Zap, label: t("about.stat4Label"), value: "40%" },
+    { id: "apps", icon: Brain, label: t("about.stat1Label"), value: "8+" },
+    { id: "tech", icon: Code, label: t("about.stat2Label"), value: "25+" },
+    { id: "data", icon: TrendingUp, label: t("about.stat3Label"), value: "1M+" },
+    { id: "prod", icon: Zap, label: t("about.stat4Label"), value: "40%" },
   ];
 
   return (
@@ -86,8 +86,8 @@ export function About() {
 
         {/* Stats */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
-          {stats.map((stat, index) => (
-            <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow">
+          {stats.map((stat) => (
+            <Card key={stat.id} className="p-6 text-center hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <stat.icon className="w-6 h-6 text-white" />
               </div>
@@ -101,9 +101,9 @@ export function About() {
         <div className="bg-white rounded-3xl p-12 mb-12">
           <h2 className="text-3xl text-slate-900 mb-8 text-center">{t("about.skillsTitle")}</h2>
           <div className="flex flex-wrap gap-4 justify-center">
-            {skills.map((skill, index) => (
+            {skills.map((skill) => (
               <div
-                key={index}
+                key={skill}
                 className="px-6 py-3 bg-gradient-to-r from-blue-50 to-purple-50 text-slate-900 rounded-full border border-blue-100 hover:shadow-md transition-shadow"
               >
                 {skill}
