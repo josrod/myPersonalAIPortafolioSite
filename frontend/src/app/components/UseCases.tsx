@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { ExternalLink, Play, Clock, DollarSign, Target, Sparkles, Trophy, Home, Users, GraduationCap, ArrowRight } from "lucide-react";
+import { ExternalLink, Play, Clock, DollarSign, Target, Sparkles, Trophy, Users, GraduationCap, HeartPulse, ArrowRight } from "lucide-react";
 import { Link } from "react-router";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
@@ -79,6 +79,12 @@ export function UseCases() {
       liveLink: "https://moneyminder-76.emergent.host/",
     },
     {
+      title: t("cases.hearthbeat.title"), challenge: t("cases.hearthbeat.challenge"), solution: t("cases.hearthbeat.solution"),
+      image: "https://images.unsplash.com/photo-1615486511484-92e172cc4fe0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwzfHxibG9vZCUyMHByZXNzdXJlJTIwbW9uaXRvciUyMGhlYWx0aCUyMHRyYWNraW5nJTIwbWVkaWNhbCUyMGRldmljZXxlbnwwfHx8fDE3NzUxMzA5NTh8MA&ixlib=rb-4.1.0&q=85",
+      technologies: ["React", "Health Data", "Charts & Trends", "Family Profiles", "Medical Reports"], icon: HeartPulse,
+      liveLink: "https://hearthbeat-family-hub.netlify.app",
+    },
+    {
       title: t("cases.agileTracker.title"), challenge: t("cases.agileTracker.challenge"), solution: t("cases.agileTracker.solution"),
       image: "https://images.unsplash.com/photo-1676276374429-3902f2666824?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZ2lsZSUyMHRlYW0lMjBjb2xsYWJvcmF0aW9uJTIwc3ByaW50fGVufDF8fHx8MTc3MTg1NzY1NXww&ixlib=rb-4.1.0&q=80&w=1080",
       technologies: ["React", "Node.js", "WebSocket", "Agile Metrics"], icon: Target,
@@ -107,12 +113,6 @@ export function UseCases() {
       image: "https://images.unsplash.com/photo-1606470542032-a9caa0be6e97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3V0aCUyMGZvb3RiYWxsJTIwYWNhZGVteSUyMHRyYWluaW5nJTIwY2hpbGRyZW4lMjBjb2FjaHxlbnwxfHx8fDE3NzM0ODg2Njh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       technologies: ["React", "SaaS", "Payment Integration", "CRM", "Scheduling"], icon: GraduationCap,
       liveLink: "https://football-academy-mvp.emergent.host/login",
-    },
-    {
-      title: t("cases.hearthbeat.title"), challenge: t("cases.hearthbeat.challenge"), solution: t("cases.hearthbeat.solution"),
-      image: "https://images.unsplash.com/photo-1758687126783-ea42f92dad72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYW1pbHklMjBob21lJTIwdG9nZXRoZXIlMjB0ZWNobm9sb2d5fGVufDF8fHx8MTc3MTg1NzY1Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      technologies: ["React", "Calendar API", "AI Recommendations", "Family Sync"], icon: Home,
-      liveLink: "https://hearthbeat-family-hub.netlify.app",
     },
   ];
 

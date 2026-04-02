@@ -386,9 +386,9 @@
       "solution": "Plataforma SaaS completa con inscripcion, programacion de clases, pagos, asignacion de entrenadores y comunicacion con padres."
     },
     "hearthbeat": {
-      "title": "Hub de Coordinacion Familiar",
-      "challenge": "Familias luchando por coordinar horarios y tareas",
-      "solution": "Hub familiar con calendarios compartidos, gestion de tareas y recomendaciones AI para optimizar la vida diaria."
+      "title": "Monitor de Presion Arterial y Pulso",
+      "challenge": "Sin visibilidad historica de presion arterial y pulso para decisiones medicas informadas",
+      "solution": "Construimos una app de monitoreo de salud familiar que registra lecturas de presion arterial y pulso a lo largo del tiempo para cada miembro de la familia. Tendencias historicas, graficos visuales e informes exportables dan a ti y a tu medico una vision clara antes de cualquier decision de salud."
     }
   }
 }

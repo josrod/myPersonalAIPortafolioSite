@@ -406,9 +406,9 @@
       "solution": "Plataforma SaaS completa com inscricao, agendamento, pagamentos e comunicacao."
     },
     "hearthbeat": {
-      "title": "Hub de Coordenacao Familiar",
-      "challenge": "Familias lutando para coordenar horarios",
-      "solution": "Hub familiar com calendarios compartilhados e recomendacoes AI."
+      "title": "Monitor de Pressao Arterial e Pulso",
+      "challenge": "Sem visibilidade historica de pressao arterial e pulso para decisoes medicas",
+      "solution": "Construimos uma app de monitoramento de saude familiar que rastreia leituras de pressao e pulso ao longo do tempo. Tendencias historicas, graficos visuais e relatorios exportaveis para voce e seu medico."
     }
   }
 }

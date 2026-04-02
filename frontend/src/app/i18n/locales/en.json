@@ -386,9 +386,9 @@
       "solution": "We built a complete SaaS platform handling student enrollment, class scheduling, payment processing, coach assignment, and parent communication — all in one place."
     },
     "hearthbeat": {
-      "title": "Family Coordination Hub",
-      "challenge": "Families struggling to coordinate schedules and household tasks",
-      "solution": "We designed a family hub integrating shared calendars, task management, and AI-powered recommendations to streamline daily family life and communication."
+      "title": "Blood Pressure & Pulse Tracker",
+      "challenge": "No historical visibility of blood pressure and pulse for informed medical decisions",
+      "solution": "We built a family health monitoring app that tracks blood pressure and pulse readings over time for each family member. Historical trends, visual charts, and exportable reports give both you and your doctor a clear overview before making any health decision."
     }
   }
 }

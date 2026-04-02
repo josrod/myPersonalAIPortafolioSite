@@ -406,9 +406,9 @@
       "solution": "Komplette SaaS-Plattform fuer Anmeldung, Stundenplanung, Zahlungen und Elternkommunikation."
     },
     "hearthbeat": {
-      "title": "Familien-Koordinations-Hub",
-      "challenge": "Familienplanung und Aufgabenkoordination",
-      "solution": "Familien-Hub mit gemeinsamen Kalendern, Aufgabenverwaltung und AI-Empfehlungen."
+      "title": "Blutdruck- & Puls-Tracker",
+      "challenge": "Keine historische Sicht auf Blutdruck und Puls fuer medizinische Entscheidungen",
+      "solution": "Wir haben eine Familien-Gesundheits-App gebaut, die Blutdruck- und Pulsmessungen ueber die Zeit fuer jedes Familienmitglied verfolgt. Historische Trends und exportierbare Berichte fuer Sie und Ihren Arzt."
     }
   }
 }
