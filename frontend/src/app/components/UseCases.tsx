@@ -85,10 +85,10 @@ export function UseCases() {
       liveLink: "https://hearthbeat-family-hub.netlify.app",
     },
     {
-      title: t("cases.agileTracker.title"), challenge: t("cases.agileTracker.challenge"), solution: t("cases.agileTracker.solution"),
-      image: "https://images.unsplash.com/photo-1676276374429-3902f2666824?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZ2lsZSUyMHRlYW0lMjBjb2xsYWJvcmF0aW9uJTIwc3ByaW50fGVufDF8fHx8MTc3MTg1NzY1NXww&ixlib=rb-4.1.0&q=80&w=1080",
-      technologies: ["React", "Node.js", "WebSocket", "Agile Metrics"], icon: Target,
-      liveLink: "https://ready-set-track.lovable.app",
+      title: t("cases.footballAcademy.title"), challenge: t("cases.footballAcademy.challenge"), solution: t("cases.footballAcademy.solution"),
+      image: "https://images.unsplash.com/photo-1606470542032-a9caa0be6e97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3V0aCUyMGZvb3RiYWxsJTIwYWNhZGVteSUyMHRyYWluaW5nJTIwY2hpbGRyZW4lMjBjb2FjaHxlbnwxfHx8fDE3NzM0ODg2Njh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      technologies: ["React", "SaaS", "Payment Integration", "CRM", "Scheduling"], icon: GraduationCap,
+      liveLink: "https://football-academy-mvp.emergent.host/login",
     },
     {
       title: t("cases.vibeForge.title"), challenge: t("cases.vibeForge.challenge"), solution: t("cases.vibeForge.solution"),
@@ -109,10 +109,10 @@ export function UseCases() {
       liveLink: "https://thursdayfootball.netlify.app",
     },
     {
-      title: t("cases.footballAcademy.title"), challenge: t("cases.footballAcademy.challenge"), solution: t("cases.footballAcademy.solution"),
-      image: "https://images.unsplash.com/photo-1606470542032-a9caa0be6e97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3V0aCUyMGZvb3RiYWxsJTIwYWNhZGVteSUyMHRyYWluaW5nJTIwY2hpbGRyZW4lMjBjb2FjaHxlbnwxfHx8fDE3NzM0ODg2Njh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      technologies: ["React", "SaaS", "Payment Integration", "CRM", "Scheduling"], icon: GraduationCap,
-      liveLink: "https://football-academy-mvp.emergent.host/login",
+      title: t("cases.agileTracker.title"), challenge: t("cases.agileTracker.challenge"), solution: t("cases.agileTracker.solution"),
+      image: "https://images.unsplash.com/photo-1676276374429-3902f2666824?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZ2lsZSUyMHRlYW0lMjBjb2xsYWJvcmF0aW9uJTIwc3ByaW50fGVufDF8fHx8MTc3MTg1NzY1NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      technologies: ["React", "Node.js", "WebSocket", "Agile Metrics"], icon: Target,
+      liveLink: "https://ready-set-track.lovable.app",
     },
   ];
 
