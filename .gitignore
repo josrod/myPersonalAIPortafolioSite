@@ -1,2 +1,6 @@
 node_modules
 memory/test_credentials.md
+-e 
+# Environment files
+*.env
+*.env.*
