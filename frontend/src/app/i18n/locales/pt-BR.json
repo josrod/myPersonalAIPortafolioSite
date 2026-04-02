@@ -5,7 +5,11 @@
     "projects": "Projetos",
     "contact": "Contato",
     "consultation": "Agendar Consulta",
-    "aiApp": "App AI"
+    "aiApp": "App AI",
+    "whatWeBuild": "O que construimos",
+    "howItWorks": "Como funciona",
+    "useCases": "Casos de uso",
+    "bookCall": "Agendar chamada"
   },
   "home": {
     "badge": "Portfolio de Solucoes AI-First",
@@ -28,7 +32,7 @@
     "ctaTitle": "Da Informacao a Acao",
     "ctaSubtitle": "Descubra como aplicacoes impulsionadas por AI otimizam tempo, recursos e aceleram a criacao de novos produtos digitais.",
     "ctaButton": "Saiba Mais",
-    "footer": "2026 AI-First Consulting. Todos os direitos reservados."
+    "footer": "2026 TailorAI. Todos os direitos reservados."
   },
   "about": {
     "title": "Visao Geral do Portfolio",
@@ -252,5 +256,101 @@
     "successMessage": "Clique no botao abaixo para baixar sua copia.",
     "downloadBtn": "Baixar Guia PDF",
     "errorMessage": "Algo deu errado. Por favor, tente novamente."
+  },
+  "footer": {
+    "tagline": "Solucoes AI para Pequenas Empresas",
+    "copy": "2026 TailorAI. Todos os direitos reservados."
+  },
+  "hero": {
+    "headline": "Solucoes AI sob medida para seu negocio",
+    "subheadline": "Projetamos e construimos ferramentas AI personalizadas que automatizam operacoes, economizam horas e aumentam receita — entregues em 2-4 semanas.",
+    "ctaPrimary": "Obter sua solucao AI",
+    "ctaSecondary": "Ver exemplos reais",
+    "trust1": "Entrega rapida",
+    "trust2": "Sob medida",
+    "trust3": "Sem excesso"
+  },
+  "problem": {
+    "title": "Voce esta perdendo tempo (e dinheiro) com trabalho manual",
+    "card1": "Tarefas repetitivas consomem horas",
+    "card2": "Leads nao sao acompanhados",
+    "card3": "Dados existem mas sem insights",
+    "card4": "Contratar mais pessoas e caro"
+  },
+  "solution": {
+    "title": "Construimos ferramentas AI simples que sao usadas",
+    "subtitle": "Sem plataformas genericas. Solucoes focadas no seu workflow.",
+    "input": "Seus Dados",
+    "output": "Resultados"
+  },
+  "build": {
+    "title": "O que construimos",
+    "card1Title": "Agentes AI para Clientes",
+    "card1Desc": "Assistentes para consultas e suporte 24/7.",
+    "card2Title": "Automacoes Inteligentes",
+    "card2Desc": "Fluxos que eliminam tarefas repetitivas.",
+    "card3Title": "Mini-Apps Personalizados",
+    "card3Desc": "Aplicacoes para seus processos.",
+    "card4Title": "Dados e Insights",
+    "card4Desc": "Dados brutos em dashboards acionaveis."
+  },
+  "useCases": {
+    "title": "Solucoes reais, resultados reais",
+    "case1Title": "Assistente de Orcamento",
+    "case1Desc": "Rastreador financeiro AI com categorizacao e recomendacoes.",
+    "case2Title": "Monitoramento de Saude",
+    "case2Desc": "Monitoramento personalizado com AI-insights.",
+    "case3Title": "URL para Audio",
+    "case3Desc": "Converta conteudo web em resumos de audio.",
+    "footer": "Cada solucao adaptavel em dias."
+  },
+  "howItWorks": {
+    "title": "Como funciona",
+    "stepLabel": "PASSO",
+    "step1Title": "Entender seu negocio",
+    "step1Desc": "Analisamos workflows e objetivos.",
+    "step2Title": "Projetar a solucao",
+    "step2Desc": "Arquitetura focada nas suas necessidades.",
+    "step3Title": "Construir e entregar",
+    "step3Desc": "Desenvolvimento e deploy em 2-4 semanas."
+  },
+  "pricing": {
+    "title": "Precos simples e transparentes",
+    "subtitle": "Escolha o plano ideal",
+    "starterTitle": "Starter",
+    "starterDesc": "Para testar AI",
+    "starterPrice": "$2.500",
+    "starterF1": "1 solucao AI",
+    "starterF2": "2 semanas",
+    "starterF3": "30 dias suporte",
+    "growthTitle": "Growth",
+    "growthDesc": "Para escalar com AI",
+    "growthPrice": "$5.000",
+    "growthF1": "Ate 3 solucoes",
+    "growthF2": "Entrega prioritaria",
+    "growthF3": "90 dias suporte",
+    "growthF4": "Otimizacao mensal",
+    "customTitle": "Custom",
+    "customDesc": "AI empresarial",
+    "customPrice": "Vamos conversar",
+    "customF1": "Solucoes ilimitadas",
+    "customF2": "Equipe dedicada",
+    "customF3": "Suporte continuo",
+    "customF4": "Integracoes personalizadas",
+    "popular": "Mais popular",
+    "cta": "Comecar",
+    "ctaCustom": "Contate-nos"
+  },
+  "diff": {
+    "title": "A maioria dos projetos AI falha por complexidade",
+    "subtitle": "Construimos solucoes simples com resultados reais.",
+    "point1": "Construido para seu workflow",
+    "point2": "Entrega rapida — 2-4 semanas",
+    "point3": "Facil de usar — adocao no primeiro dia"
+  },
+  "cta": {
+    "title": "Vamos construir sua primeira solucao AI",
+    "subtitle": "Conte sua tarefa mais demorada. Proposta em 24-48 horas.",
+    "button": "Agendar chamada"
   }
 }

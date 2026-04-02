@@ -4,7 +4,7 @@ import json
 from datetime import datetime, timedelta
 
 class PortfolioAPITester:
-    def __init__(self, base_url="https://431d7cfe-13f1-4820-b439-b46ebb1e1b0a.preview.emergentagent.com/api"):
+    def __init__(self, base_url="https://ai-first-consultant.preview.emergentagent.com/api"):
         self.base_url = base_url
         self.tests_run = 0
         self.tests_passed = 0
