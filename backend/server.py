@@ -559,14 +559,12 @@ async def capture_lead(form: LeadForm):
     return {"status": "success", "lead_id": lead_id, "message": "Thank you! Your guide is ready.", "already_subscribed": False}
 
 
+GUIDE_PDF_URL = "https://customer-assets.emergentagent.com/job_ai-first-consultant/artifacts/3gre27p4_5_Steps_to_Integrate_AI_in_Your_Business.pdf"
+
+
 @app.get("/api/leads/guide-pdf")
 async def download_guide_pdf():
-    pdf_bytes = generate_lead_magnet_pdf()
-    return Response(
-        content=bytes(pdf_bytes),
-        media_type="application/pdf",
-        headers={"Content-Disposition": 'attachment; filename="5-Steps-AI-Integration-Guide.pdf"'},
-    )
+    return {"redirect_url": GUIDE_PDF_URL}
 
 
 # Admin Dashboard

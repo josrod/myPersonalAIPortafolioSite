@@ -77,7 +77,7 @@ export function LeadMagnet() {
                   </div>
                   <h4 className="text-xl text-slate-900 mb-2">{t("leadMagnet.successTitle")}</h4>
                   <p className="text-slate-600 text-sm mb-6">{t("leadMagnet.successMessage")}</p>
-                  <a href="/api/leads/guide-pdf" download target="_blank">
+                  <a href="https://customer-assets.emergentagent.com/job_ai-first-consultant/artifacts/3gre27p4_5_Steps_to_Integrate_AI_in_Your_Business.pdf" download target="_blank" rel="noopener noreferrer">
                     <Button variant="outline" className="gap-2" data-testid="lead-magnet-download-btn">
                       <Download className="w-4 h-4" />
                       {t("leadMagnet.downloadBtn")}
