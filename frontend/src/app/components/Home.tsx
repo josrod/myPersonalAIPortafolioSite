@@ -88,8 +88,8 @@ export function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <Testimonials />
+      {/* Testimonials - temporarily disabled, will re-enable with real client testimonials */}
+      {/* <Testimonials /> */}
 
       {/* Lead Magnet */}
       <LeadMagnet />
