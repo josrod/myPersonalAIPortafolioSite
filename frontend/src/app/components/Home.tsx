@@ -36,7 +36,7 @@ export function Home() {
                     {t("hero.ctaPrimary")} <ArrowRight className="w-4 h-4" />
                   </Button>
                 </Link>
-                <Link to="/projects">
+                <Link to="/use-cases">
                   <Button size="lg" variant="outline" className="rounded-full px-8" data-testid="hero-cta-secondary">
                     {t("hero.ctaSecondary")}
                   </Button>
@@ -146,6 +146,7 @@ export function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">{t("useCases.title")}</h2>
+            <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">{t("useCases.subtitle")}</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -159,7 +160,13 @@ export function Home() {
               </Card>
             ))}
           </div>
-          <p className="text-center text-sm text-slate-400 dark:text-slate-500 mt-10">{t("useCases.footer")}</p>
+          <div className="text-center mt-10">
+            <Link to="/use-cases">
+              <Button variant="outline" className="gap-2 rounded-full px-8" data-testid="use-cases-see-all">
+                {t("useCases.seeAll")} <ArrowRight className="w-4 h-4" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 

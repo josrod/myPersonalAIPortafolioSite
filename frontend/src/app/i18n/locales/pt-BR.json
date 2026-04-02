@@ -302,7 +302,9 @@
     "case2Desc": "Monitoramento personalizado com AI-insights.",
     "case3Title": "URL para Audio",
     "case3Desc": "Converta conteudo web em resumos de audio.",
-    "footer": "Cada solucao adaptavel em dias."
+    "footer": "Cada solucao adaptavel em dias.",
+    "subtitle": "Desafios reais que resolvemos com solucoes AI",
+    "seeAll": "Ver todos os casos de uso"
   },
   "howItWorks": {
     "title": "Como funciona",
@@ -352,5 +354,61 @@
     "title": "Vamos construir sua primeira solucao AI",
     "subtitle": "Conte sua tarefa mais demorada. Proposta em 24-48 horas.",
     "button": "Agendar chamada"
+  },
+  "cases": {
+    "badge": "Solucoes Entregues",
+    "title": "Casos de Uso e Solucoes",
+    "subtitle": "Desafios reais resolvidos com ferramentas AI personalizadas.",
+    "viewDemo": "Ver ao vivo",
+    "summaryTitle": "Como Resolvemos Problemas",
+    "sum1Title": "Produtividade e Decisoes",
+    "sum1Desc": "Ferramentas AI que ajudam a consumir informacao rapido e priorizar.",
+    "sum2Title": "Dados em Insights",
+    "sum2Desc": "Transformando dados brutos em visualizacoes intuitivas e indicadores acionaveis.",
+    "sum3Title": "Criacao Assistida por AI",
+    "sum3Desc": "Da ideia ao software funcional — AI acelera o ciclo de desenvolvimento.",
+    "conclusion": "Cada solucao demonstra como ferramentas AI focadas",
+    "conclusionBold": "transformam problemas complexos em fluxos automatizados e simples.",
+    "ctaButton": "Discutir seu desafio",
+    "aiCommute": {
+      "title": "AI Commute Summarizer",
+      "challenge": "Muita informacao, pouco tempo no trajeto",
+      "solution": "Assistente diario que converte noticias em resumos de audio otimizados para o trajeto."
+    },
+    "budgetFlow": {
+      "title": "BudgetFlow (MoneyMinder)",
+      "challenge": "Sem visibilidade financeira por categoria",
+      "solution": "Rastreador financeiro inteligente com categorizacao AI e relatorios visuais."
+    },
+    "agileTracker": {
+      "title": "Agile Sprint Tracker",
+      "challenge": "Equipes sem visibilidade de sprints",
+      "solution": "Ferramenta agil com planejamento de sprints e acompanhamento de velocidade em tempo real."
+    },
+    "vibeForge": {
+      "title": "VibeForge - AI Build Studio",
+      "challenge": "Da ideia ao codigo demora demais",
+      "solution": "Ambiente de desenvolvimento AI que gera estrutura e componentes a partir de descricoes."
+    },
+    "footballStats": {
+      "title": "Analitica de Futebol Fantasy",
+      "challenge": "Dados esportivos sem insights acionaveis",
+      "solution": "Dashboard analitico com metricas FPI e rankings em 5+ ligas."
+    },
+    "thursdayFootball": {
+      "title": "Organizador Social de Jogos",
+      "challenge": "Coordenar jogos casuais e caotico",
+      "solution": "Plataforma social para criacao de jogos, gestao de equipes e presenca."
+    },
+    "footballAcademy": {
+      "title": "Football Academy Manager",
+      "challenge": "Academias gerenciando tudo manualmente",
+      "solution": "Plataforma SaaS completa com inscricao, agendamento, pagamentos e comunicacao."
+    },
+    "hearthbeat": {
+      "title": "Hub de Coordenacao Familiar",
+      "challenge": "Familias lutando para coordenar horarios",
+      "solution": "Hub familiar com calendarios compartilhados e recomendacoes AI."
+    }
   }
 }

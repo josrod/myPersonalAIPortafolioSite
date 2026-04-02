@@ -26,8 +26,7 @@ export function Layout() {
   const navItems = [
     { type: "scroll" as const, id: "what-we-build", label: t("nav.whatWeBuild") },
     { type: "scroll" as const, id: "how-it-works", label: t("nav.howItWorks") },
-    { type: "scroll" as const, id: "use-cases", label: t("nav.useCases") },
-    { type: "link" as const, path: "/projects", label: t("nav.projects") },
+    { type: "link" as const, path: "/use-cases", label: t("nav.useCases") },
     { type: "link" as const, path: "/contact", label: t("nav.contact") },
   ];
 
@@ -117,7 +116,7 @@ export function Layout() {
             <p className="text-sm">{t("footer.tagline")}</p>
             <div className="flex gap-6 text-sm">
               <Link to="/contact" className="hover:text-white transition-colors">{t("nav.contact")}</Link>
-              <Link to="/projects" className="hover:text-white transition-colors">{t("nav.projects")}</Link>
+              <Link to="/use-cases" className="hover:text-white transition-colors">{t("nav.useCases")}</Link>
               <Link to="/about" className="hover:text-white transition-colors">{t("nav.about")}</Link>
             </div>
           </div>

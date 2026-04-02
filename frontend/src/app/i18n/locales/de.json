@@ -302,7 +302,9 @@
     "case2Desc": "Personalisiertes Monitoring mit AI-Insights.",
     "case3Title": "URL-zu-Audio-Tool",
     "case3Desc": "Webinhalte in Audio-Zusammenfassungen konvertieren.",
-    "footer": "Jede Loesung in Tagen anpassbar."
+    "footer": "Jede Loesung in Tagen anpassbar.",
+    "subtitle": "Echte Herausforderungen die wir mit AI geloest haben",
+    "seeAll": "Alle Anwendungsfaelle"
   },
   "howItWorks": {
     "title": "So funktioniert es",
@@ -352,5 +354,61 @@
     "title": "Lassen Sie uns Ihre erste AI-Loesung bauen",
     "subtitle": "Nennen Sie Ihre zeitaufwaendigste Aufgabe. Vorschlag in 24-48 Stunden.",
     "button": "Termin buchen"
+  },
+  "cases": {
+    "badge": "Gelieferte Loesungen",
+    "title": "Anwendungsfaelle & Loesungen",
+    "subtitle": "Echte Herausforderungen geloest mit individuellen AI-Tools.",
+    "viewDemo": "Live ansehen",
+    "summaryTitle": "Wie wir Probleme loesen",
+    "sum1Title": "Produktivitaet & Entscheidungen",
+    "sum1Desc": "AI-Tools die helfen Informationen schneller zu verarbeiten.",
+    "sum2Title": "Daten in Erkenntnisse",
+    "sum2Desc": "Rohdaten in intuitive Visualisierungen und umsetzbare Indikatoren verwandeln.",
+    "sum3Title": "AI-gestuetzte Erstellung",
+    "sum3Desc": "Von der Idee zur funktionierenden Software — AI beschleunigt den Entwicklungszyklus.",
+    "conclusion": "Jede Loesung zeigt wie fokussierte AI-Tools",
+    "conclusionBold": "komplexe Probleme in einfache automatisierte Workflows verwandeln.",
+    "ctaButton": "Ihre Herausforderung besprechen",
+    "aiCommute": {
+      "title": "AI Commute Summarizer",
+      "challenge": "Zu viel Information, zu wenig Pendelzeit",
+      "solution": "Taeglicher AI-Assistent der Nachrichten in Audio-Zusammenfassungen fuer die Pendelzeit konvertiert."
+    },
+    "budgetFlow": {
+      "title": "BudgetFlow (MoneyMinder)",
+      "challenge": "Keine Finanztransparenz nach Kategorien",
+      "solution": "Intelligenter Finanz-Tracker mit AI-Kategorisierung und visuellen Berichten."
+    },
+    "agileTracker": {
+      "title": "Agile Sprint Tracker",
+      "challenge": "Teams ohne Sprint-Sichtbarkeit",
+      "solution": "Agiles Management-Tool mit Sprint-Planung und Echtzeit-Geschwindigkeitsverfolgung."
+    },
+    "vibeForge": {
+      "title": "VibeForge - AI Build Studio",
+      "challenge": "Zu lange von der Idee zum Code",
+      "solution": "AI-Entwicklungsumgebung die aus Beschreibungen Seitenstruktur und Komponenten generiert."
+    },
+    "footballStats": {
+      "title": "Fantasy Fussball Analytik",
+      "challenge": "Sportdaten ohne umsetzbare Erkenntnisse",
+      "solution": "Analytics-Dashboard mit FPI-Metriken und Spieler-Rankings in 5+ Ligen."
+    },
+    "thursdayFootball": {
+      "title": "Sozialer Spielorganisator",
+      "challenge": "Chaotische Koordination von Freizeitfussball",
+      "solution": "Soziale Plattform fuer Spielerstellung, Teamverwaltung und Anwesenheitsverfolgung."
+    },
+    "footballAcademy": {
+      "title": "Football Academy Manager",
+      "challenge": "Akademien verwalten alles manuell",
+      "solution": "Komplette SaaS-Plattform fuer Anmeldung, Stundenplanung, Zahlungen und Elternkommunikation."
+    },
+    "hearthbeat": {
+      "title": "Familien-Koordinations-Hub",
+      "challenge": "Familienplanung und Aufgabenkoordination",
+      "solution": "Familien-Hub mit gemeinsamen Kalendern, Aufgabenverwaltung und AI-Empfehlungen."
+    }
   }
 }

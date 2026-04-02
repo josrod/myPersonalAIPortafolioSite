@@ -56,7 +56,9 @@
     "case2Desc": "Personalized health monitoring with AI insights, trend analysis, and automated reminders.",
     "case3Title": "URL to Audio Tool",
     "case3Desc": "Convert any web content into audio summaries using AI text synthesis and natural language processing.",
-    "footer": "Each solution can be adapted to your workflow in days."
+    "footer": "Each solution can be adapted to your workflow in days.",
+    "subtitle": "Real challenges we've solved with tailored AI solutions",
+    "seeAll": "See all use cases"
   },
   "howItWorks": {
     "title": "How it works",
@@ -134,14 +136,46 @@
   "projects": {
     "title": "AI-Powered Applications",
     "subtitle": "A comprehensive portfolio showcasing real-world intelligent automation",
-    "aiCommute": { "title": "AI Commute Summarizer", "tagline": "Daily Intelligence Briefing, Synthesized for the Road", "description": "Daily assistant that converts news sources, briefings, and internal updates into brief, easy-to-consume summaries during commute time." },
-    "budgetFlow": { "title": "BudgetFlow (MoneyMinder)", "tagline": "Smart Personal Finance Tracking", "description": "Personal finance platform with intelligent tracking of income and expenses, flexible categorization, visual reports, and multilingual support." },
-    "agileTracker": { "title": "Processing Team Agile Tracker", "tagline": "Ready-Set-Track: Sprint Planning & Team Collaboration", "description": "Agile management tool for teams, focused on sprint planning, collaboration, goal alignment, and visualization of progress and team velocity." },
-    "vibeForge": { "title": "VibeForge - Smooth Build Studio", "tagline": "Vibe-First Development Environment", "description": "AI-powered development environment where users describe product vision and the system generates page structure, components, and services." },
-    "footballStats": { "title": "FootballStats - Fantasy Power Index", "tagline": "Fantasy Pitch Pulse: Advanced Football Analytics", "description": "Football analytics dashboard with player rankings, proprietary FPI metrics, multiple leagues and sections like Dream Team Builder." },
-    "thursdayFootball": { "title": "ThursdayFootball", "tagline": "Casual Football Match Management", "description": "Social platform to organize football matches between friends and colleagues. Create games, manage teams, track who's playing." },
-    "footballAcademy": { "title": "Football Academy Manager", "tagline": "Complete SaaS Platform for Youth Football Academies", "description": "End-to-end management platform for youth football academies. Handles student enrollment, class scheduling, payment processing, coach assignment, and parent communication." },
-    "hearthbeat": { "title": "Hearthbeat Family Hub", "tagline": "Smart Family Coordination & Communication", "description": "Family hub concept integrating coordination, communication, and intelligent recommendations for the home." },
+    "aiCommute": {
+      "title": "AI Commute Summarizer",
+      "tagline": "Daily Intelligence Briefing, Synthesized for the Road",
+      "description": "Daily assistant that converts news sources, briefings, and internal updates into brief, easy-to-consume summaries during commute time."
+    },
+    "budgetFlow": {
+      "title": "BudgetFlow (MoneyMinder)",
+      "tagline": "Smart Personal Finance Tracking",
+      "description": "Personal finance platform with intelligent tracking of income and expenses, flexible categorization, visual reports, and multilingual support."
+    },
+    "agileTracker": {
+      "title": "Processing Team Agile Tracker",
+      "tagline": "Ready-Set-Track: Sprint Planning & Team Collaboration",
+      "description": "Agile management tool for teams, focused on sprint planning, collaboration, goal alignment, and visualization of progress and team velocity."
+    },
+    "vibeForge": {
+      "title": "VibeForge - Smooth Build Studio",
+      "tagline": "Vibe-First Development Environment",
+      "description": "AI-powered development environment where users describe product vision and the system generates page structure, components, and services."
+    },
+    "footballStats": {
+      "title": "FootballStats - Fantasy Power Index",
+      "tagline": "Fantasy Pitch Pulse: Advanced Football Analytics",
+      "description": "Football analytics dashboard with player rankings, proprietary FPI metrics, multiple leagues and sections like Dream Team Builder."
+    },
+    "thursdayFootball": {
+      "title": "ThursdayFootball",
+      "tagline": "Casual Football Match Management",
+      "description": "Social platform to organize football matches between friends and colleagues. Create games, manage teams, track who's playing."
+    },
+    "footballAcademy": {
+      "title": "Football Academy Manager",
+      "tagline": "Complete SaaS Platform for Youth Football Academies",
+      "description": "End-to-end management platform for youth football academies. Handles student enrollment, class scheduling, payment processing, coach assignment, and parent communication."
+    },
+    "hearthbeat": {
+      "title": "Hearthbeat Family Hub",
+      "tagline": "Smart Family Coordination & Communication",
+      "description": "Family hub concept integrating coordination, communication, and intelligent recommendations for the home."
+    },
     "viewProject": "View Project",
     "code": "Code",
     "narrativeTitle": "Portfolio Insights",
@@ -158,74 +192,203 @@
   "contact": {
     "title": "Get in Touch",
     "subtitle": "Ready to transform your business with AI? Let's start a conversation.",
-    "nameLabel": "Full Name", "namePlaceholder": "Your name",
-    "emailLabel": "Email", "emailPlaceholder": "your@email.com",
-    "companyLabel": "Company (optional)", "companyPlaceholder": "Your company name",
-    "subjectLabel": "Subject", "subjectPlaceholder": "How can we help?",
-    "messageLabel": "Message", "messagePlaceholder": "Tell us about your project or question...",
-    "submit": "Send Message", "sending": "Sending...",
-    "successTitle": "Message Sent!", "successMessage": "Thank you for reaching out. We'll get back to you within 24 hours.",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your@email.com",
+    "companyLabel": "Company (optional)",
+    "companyPlaceholder": "Your company name",
+    "subjectLabel": "Subject",
+    "subjectPlaceholder": "How can we help?",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell us about your project or question...",
+    "submit": "Send Message",
+    "sending": "Sending...",
+    "successTitle": "Message Sent!",
+    "successMessage": "Thank you for reaching out. We'll get back to you within 24 hours.",
     "errorMessage": "Something went wrong. Please try again.",
-    "infoTitle": "Contact Information", "infoDesc": "Have a question about our AI solutions? We'd love to hear from you.",
+    "infoTitle": "Contact Information",
+    "infoDesc": "Have a question about our AI solutions? We'd love to hear from you.",
     "responseTime": "Typical response time: 24 hours",
-    "chatCta": "Need immediate answers?", "chatCtaButton": "Chat with our AI Assistant"
+    "chatCta": "Need immediate answers?",
+    "chatCtaButton": "Chat with our AI Assistant"
   },
   "consultation": {
     "title": "Book a Consultation",
     "subtitle": "Schedule a free 30-minute consultation to discuss your AI needs.",
-    "nameLabel": "Full Name", "namePlaceholder": "Your name",
-    "emailLabel": "Email", "emailPlaceholder": "your@email.com",
-    "companyLabel": "Company (optional)", "companyPlaceholder": "Your company name",
-    "dateLabel": "Preferred Date", "timeLabel": "Available Time Slots",
-    "topicLabel": "Consultation Topic", "topicPlaceholder": "What would you like to discuss?",
-    "notesLabel": "Additional Notes (optional)", "notesPlaceholder": "Any additional information...",
-    "submit": "Book Consultation", "booking": "Booking...",
-    "successTitle": "Consultation Booked!", "successMessage": "Your consultation has been confirmed.",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your@email.com",
+    "companyLabel": "Company (optional)",
+    "companyPlaceholder": "Your company name",
+    "dateLabel": "Preferred Date",
+    "timeLabel": "Available Time Slots",
+    "topicLabel": "Consultation Topic",
+    "topicPlaceholder": "What would you like to discuss?",
+    "notesLabel": "Additional Notes (optional)",
+    "notesPlaceholder": "Any additional information...",
+    "submit": "Book Consultation",
+    "booking": "Booking...",
+    "successTitle": "Consultation Booked!",
+    "successMessage": "Your consultation has been confirmed.",
     "errorMessage": "Something went wrong. Please try again.",
     "addToCalendar": "Add to Calendar",
     "noSlots": "No available slots for this date",
     "selectDate": "Select a date to see available times",
-    "topics": { "strategy": "AI Strategy & Roadmap", "development": "Custom AI App Development", "integration": "AI Integration into Existing Systems", "analytics": "Data Analytics & Visualization", "automation": "Intelligent Process Automation", "other": "Other" }
+    "topics": {
+      "strategy": "AI Strategy & Roadmap",
+      "development": "Custom AI App Development",
+      "integration": "AI Integration into Existing Systems",
+      "analytics": "Data Analytics & Visualization",
+      "automation": "Intelligent Process Automation",
+      "other": "Other"
+    }
   },
   "chat": {
     "title": "TailorAI Assistant",
     "subtitle": "Ask me about our AI solutions",
     "placeholder": "Type your question...",
-    "send": "Send", "thinking": "Thinking...",
+    "send": "Send",
+    "thinking": "Thinking...",
     "welcome": "Hello! I'm the TailorAI assistant. How can I help you today? I can answer questions about our custom AI solutions, discuss your business needs, or help you book a consultation.",
     "error": "Sorry, I encountered an error. Please try again."
   },
   "aiApp": {
-    "badge": "AI-Powered Solution Engine", "title": "AI Problem Solver",
+    "badge": "AI-Powered Solution Engine",
+    "title": "AI Problem Solver",
     "subtitle": "Describe your problem and get intelligent, step-by-step solutions",
-    "problemTypeLabel": "Problem Type", "problemTypePlaceholder": "Select problem type",
-    "problemLabel": "Describe Your Problem", "problemPlaceholder": "Enter your problem in detail...",
-    "solving": "Analyzing Problem...", "solve": "Solve Problem",
-    "solutionTitle": "AI Solution", "problemSummary": "Problem Summary",
-    "solutionApproach": "Solution Approach", "stepByStep": "Step-by-Step Guide",
+    "problemTypeLabel": "Problem Type",
+    "problemTypePlaceholder": "Select problem type",
+    "problemLabel": "Describe Your Problem",
+    "problemPlaceholder": "Enter your problem in detail...",
+    "solving": "Analyzing Problem...",
+    "solve": "Solve Problem",
+    "solutionTitle": "AI Solution",
+    "problemSummary": "Problem Summary",
+    "solutionApproach": "Solution Approach",
+    "stepByStep": "Step-by-Step Guide",
     "howItWorksTitle": "How It Works",
-    "howItWorks1": "Select your problem type", "howItWorks2": "Describe your problem in detail",
-    "howItWorks3": "Click \"Solve Problem\" for AI-powered solutions", "howItWorks4": "Follow the step-by-step guide",
-    "recentSolutions": "Recent Solutions", "proTipTitle": "Pro Tip",
+    "howItWorks1": "Select your problem type",
+    "howItWorks2": "Describe your problem in detail",
+    "howItWorks3": "Click \"Solve Problem\" for AI-powered solutions",
+    "howItWorks4": "Follow the step-by-step guide",
+    "recentSolutions": "Recent Solutions",
+    "proTipTitle": "Pro Tip",
     "proTipDesc": "For best results, provide as much context and detail as possible.",
-    "types": { "general": "General Problem", "generalDesc": "Any general question", "math": "Mathematics", "mathDesc": "Math equations", "coding": "Programming", "codingDesc": "Code logic", "logic": "Logic Puzzle", "logicDesc": "Logical reasoning", "optimization": "Optimization", "optimizationDesc": "Efficiency optimization" }
+    "types": {
+      "general": "General Problem",
+      "generalDesc": "Any general question",
+      "math": "Mathematics",
+      "mathDesc": "Math equations",
+      "coding": "Programming",
+      "codingDesc": "Code logic",
+      "logic": "Logic Puzzle",
+      "logicDesc": "Logical reasoning",
+      "optimization": "Optimization",
+      "optimizationDesc": "Efficiency optimization"
+    }
   },
-  "notFound": { "title": "Page Not Found", "description": "Oops! The page you're looking for doesn't exist.", "goHome": "Go Home", "goBack": "Go Back" },
-  "testimonials": { "title": "What Our Clients Say", "subtitle": "Trusted by forward-thinking companies", "t1Name": "Maria Gonzalez", "t1Role": "CTO, FinTech Solutions", "t1Text": "The AI strategy roadmap they delivered transformed our approach to data processing. We reduced manual work by 60%.", "t2Name": "Stefan Richter", "t2Role": "VP Engineering, LogiTech GmbH", "t2Text": "Their expertise in AI integration was exactly what we needed. Seamlessly connected our legacy systems with modern ML.", "t3Name": "Lucas Ferreira", "t3Role": "Product Director, DataViz Inc", "t3Text": "The sports analytics dashboard processes millions of data points in real-time. Our users love the intuitive visualizations.", "t4Name": "Ana Delgado", "t4Role": "CEO, SmartHome Labs", "t4Text": "From concept to production in just 8 weeks. Their AI-assisted development approach accelerated our time-to-market." },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "Oops! The page you're looking for doesn't exist.",
+    "goHome": "Go Home",
+    "goBack": "Go Back"
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Trusted by forward-thinking companies",
+    "t1Name": "Maria Gonzalez",
+    "t1Role": "CTO, FinTech Solutions",
+    "t1Text": "The AI strategy roadmap they delivered transformed our approach to data processing. We reduced manual work by 60%.",
+    "t2Name": "Stefan Richter",
+    "t2Role": "VP Engineering, LogiTech GmbH",
+    "t2Text": "Their expertise in AI integration was exactly what we needed. Seamlessly connected our legacy systems with modern ML.",
+    "t3Name": "Lucas Ferreira",
+    "t3Role": "Product Director, DataViz Inc",
+    "t3Text": "The sports analytics dashboard processes millions of data points in real-time. Our users love the intuitive visualizations.",
+    "t4Name": "Ana Delgado",
+    "t4Role": "CEO, SmartHome Labs",
+    "t4Text": "From concept to production in just 8 weeks. Their AI-assisted development approach accelerated our time-to-market."
+  },
   "leadMagnet": {
-    "badge": "Free Guide", "title": "5 Steps to Integrate AI in Your Business",
+    "badge": "Free Guide",
+    "title": "5 Steps to Integrate AI in Your Business",
     "subtitle": "A practical guide with actionable strategies to identify AI opportunities, build your roadmap, and measure ROI.",
     "step1": "Audit your current processes for AI opportunities",
     "step2": "Define clear success metrics and KPIs",
     "step3": "Choose the right AI technologies for your use case",
     "step4": "Build a phased implementation roadmap",
     "step5": "Measure, iterate, and scale intelligently",
-    "formTitle": "Get Your Free Guide", "formSubtitle": "Enter your details to download instantly.",
-    "nameLabel": "Full Name", "namePlaceholder": "Your name",
-    "emailLabel": "Email", "emailPlaceholder": "your@email.com",
-    "companyLabel": "Company (optional)", "companyPlaceholder": "Your company",
-    "submitBtn": "Download Free Guide", "sending": "Processing...",
-    "successTitle": "Your Guide is Ready!", "successMessage": "Click the button below to download your copy.",
-    "downloadBtn": "Download PDF Guide", "errorMessage": "Something went wrong. Please try again."
+    "formTitle": "Get Your Free Guide",
+    "formSubtitle": "Enter your details to download instantly.",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your@email.com",
+    "companyLabel": "Company (optional)",
+    "companyPlaceholder": "Your company",
+    "submitBtn": "Download Free Guide",
+    "sending": "Processing...",
+    "successTitle": "Your Guide is Ready!",
+    "successMessage": "Click the button below to download your copy.",
+    "downloadBtn": "Download PDF Guide",
+    "errorMessage": "Something went wrong. Please try again."
+  },
+  "cases": {
+    "badge": "Delivered Solutions",
+    "title": "Use Cases & Delivered Solutions",
+    "subtitle": "Real challenges solved with custom AI tools. Each solution was designed, built, and delivered to address a specific business need.",
+    "viewDemo": "See it live",
+    "summaryTitle": "How We Solve Problems",
+    "sum1Title": "Productivity & Decisions",
+    "sum1Desc": "AI-powered tools that help users consume information faster and prioritize what matters.",
+    "sum2Title": "Data into Insights",
+    "sum2Desc": "Transforming raw data from sports, finance, and operations into intuitive visualizations and actionable indicators.",
+    "sum3Title": "AI-Assisted Creation",
+    "sum3Desc": "From idea to working software — AI accelerates the entire development lifecycle.",
+    "conclusion": "Each solution demonstrates how focused AI tools",
+    "conclusionBold": "turn complex problems into simple, automated workflows.",
+    "ctaButton": "Discuss your challenge",
+    "aiCommute": {
+      "title": "AI Commute Summarizer",
+      "challenge": "Too much information, too little time on the commute",
+      "solution": "We built a daily AI assistant that converts news, briefings, and updates into brief audio summaries optimized for commute time. NLP-powered synthesis delivers only what matters."
+    },
+    "budgetFlow": {
+      "title": "BudgetFlow (MoneyMinder)",
+      "challenge": "No visibility over personal finances across categories",
+      "solution": "We designed an intelligent finance tracker with AI-powered categorization, visual reports, spending insights, and multilingual support. Users see where their money goes at a glance."
+    },
+    "agileTracker": {
+      "title": "Agile Sprint Tracker",
+      "challenge": "Teams losing velocity without clear sprint visibility",
+      "solution": "We delivered an agile management tool with sprint planning, goal alignment, and real-time velocity tracking. AI supports task prioritization and progress forecasting."
+    },
+    "vibeForge": {
+      "title": "VibeForge - AI Build Studio",
+      "challenge": "Going from product idea to code takes too long",
+      "solution": "We created an AI-powered development environment where users describe their vision and the system generates page structure, components, and services — with instant preview and exportable code."
+    },
+    "footballStats": {
+      "title": "Fantasy Football Analytics",
+      "challenge": "Raw sports data without actionable insights for fantasy leagues",
+      "solution": "We built an analytics dashboard with proprietary FPI metrics, player rankings across 5+ leagues, Dream Team Builder, and near real-time data processing for advanced sports intelligence."
+    },
+    "thursdayFootball": {
+      "title": "Social Match Organizer",
+      "challenge": "Coordinating casual football matches is chaotic",
+      "solution": "We delivered a social platform that handles match creation, team management, attendance tracking, and even jersey washing rotation — eliminating the group chat chaos."
+    },
+    "footballAcademy": {
+      "title": "Football Academy Manager",
+      "challenge": "Youth academies managing enrollment, payments, and scheduling manually",
+      "solution": "We built a complete SaaS platform handling student enrollment, class scheduling, payment processing, coach assignment, and parent communication — all in one place."
+    },
+    "hearthbeat": {
+      "title": "Family Coordination Hub",
+      "challenge": "Families struggling to coordinate schedules and household tasks",
+      "solution": "We designed a family hub integrating shared calendars, task management, and AI-powered recommendations to streamline daily family life and communication."
+    }
   }
 }

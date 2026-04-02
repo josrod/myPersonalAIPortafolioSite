@@ -1,15 +1,28 @@
 {
   "nav": {
-    "home": "Inicio", "about": "Acerca de", "projects": "Proyectos", "contact": "Contacto",
-    "consultation": "Agendar Consulta", "aiApp": "App AI",
-    "whatWeBuild": "Que construimos", "howItWorks": "Como funciona", "useCases": "Casos de uso", "bookCall": "Agendar llamada"
+    "home": "Inicio",
+    "about": "Acerca de",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "consultation": "Agendar Consulta",
+    "aiApp": "App AI",
+    "whatWeBuild": "Que construimos",
+    "howItWorks": "Como funciona",
+    "useCases": "Casos de uso",
+    "bookCall": "Agendar llamada"
   },
-  "footer": { "tagline": "Soluciones AI para Pequenas Empresas", "copy": "2026 TailorAI. Todos los derechos reservados." },
+  "footer": {
+    "tagline": "Soluciones AI para Pequenas Empresas",
+    "copy": "2026 TailorAI. Todos los derechos reservados."
+  },
   "hero": {
     "headline": "Soluciones AI hechas a medida para tu negocio",
     "subheadline": "Disenamos y construimos herramientas AI personalizadas que automatizan operaciones, ahorran horas cada semana y aumentan ingresos — entregadas en 2-4 semanas.",
-    "ctaPrimary": "Obtener tu solucion AI", "ctaSecondary": "Ver ejemplos reales",
-    "trust1": "Entrega rapida", "trust2": "A medida", "trust3": "Sin sobreingenieria"
+    "ctaPrimary": "Obtener tu solucion AI",
+    "ctaSecondary": "Ver ejemplos reales",
+    "trust1": "Entrega rapida",
+    "trust2": "A medida",
+    "trust3": "Sin sobreingenieria"
   },
   "problem": {
     "title": "Estas perdiendo tiempo (y dinero) en trabajo manual",
@@ -21,38 +34,68 @@
   "solution": {
     "title": "Construimos herramientas AI simples que realmente se usan",
     "subtitle": "Sin plataformas genericas. Sin sistemas complejos. Creamos soluciones enfocadas a tu flujo de trabajo.",
-    "input": "Tus Datos", "output": "Resultados"
+    "input": "Tus Datos",
+    "output": "Resultados"
   },
   "build": {
     "title": "Que construimos",
-    "card1Title": "Agentes AI para Clientes", "card1Desc": "Asistentes inteligentes que manejan consultas, califican leads y brindan soporte 24/7.",
-    "card2Title": "Automatizaciones Inteligentes", "card2Desc": "Flujos automatizados que eliminan tareas repetitivas y conectan tus herramientas existentes.",
-    "card3Title": "Mini-Apps Personalizadas", "card3Desc": "Aplicaciones construidas a proposito para tus procesos de negocio especificos.",
-    "card4Title": "Datos e Insights", "card4Desc": "Transforma datos crudos en dashboards accionables e informes inteligentes."
+    "card1Title": "Agentes AI para Clientes",
+    "card1Desc": "Asistentes inteligentes que manejan consultas, califican leads y brindan soporte 24/7.",
+    "card2Title": "Automatizaciones Inteligentes",
+    "card2Desc": "Flujos automatizados que eliminan tareas repetitivas y conectan tus herramientas existentes.",
+    "card3Title": "Mini-Apps Personalizadas",
+    "card3Desc": "Aplicaciones construidas a proposito para tus procesos de negocio especificos.",
+    "card4Title": "Datos e Insights",
+    "card4Desc": "Transforma datos crudos en dashboards accionables e informes inteligentes."
   },
   "useCases": {
     "title": "Soluciones reales, resultados reales",
-    "case1Title": "Asistente de Presupuesto Inteligente", "case1Desc": "Rastreador financiero con AI que categoriza gastos, genera reportes visuales y provee recomendaciones inteligentes.",
-    "case2Title": "Sistema de Seguimiento de Salud", "case2Desc": "Monitoreo personalizado de salud con insights AI, analisis de tendencias y recordatorios automatizados.",
-    "case3Title": "Herramienta URL a Audio", "case3Desc": "Convierte cualquier contenido web en resumenes de audio usando sintesis de texto AI y procesamiento de lenguaje natural.",
-    "footer": "Cada solucion se puede adaptar a tu flujo de trabajo en dias."
+    "case1Title": "Asistente de Presupuesto Inteligente",
+    "case1Desc": "Rastreador financiero con AI que categoriza gastos, genera reportes visuales y provee recomendaciones inteligentes.",
+    "case2Title": "Sistema de Seguimiento de Salud",
+    "case2Desc": "Monitoreo personalizado de salud con insights AI, analisis de tendencias y recordatorios automatizados.",
+    "case3Title": "Herramienta URL a Audio",
+    "case3Desc": "Convierte cualquier contenido web en resumenes de audio usando sintesis de texto AI y procesamiento de lenguaje natural.",
+    "footer": "Cada solucion se puede adaptar a tu flujo de trabajo en dias.",
+    "subtitle": "Desafios reales que hemos resuelto con soluciones AI a medida",
+    "seeAll": "Ver todos los casos de uso"
   },
   "howItWorks": {
     "title": "Como funciona",
     "stepLabel": "PASO",
-    "step1Title": "Entendemos tu negocio", "step1Desc": "Analizamos tus flujos, puntos de dolor y objetivos para identificar las mejores oportunidades AI.",
-    "step2Title": "Disenamos la solucion", "step2Desc": "Creamos una arquitectura de solucion enfocada y a medida para tus necesidades.",
-    "step3Title": "Construimos y entregamos", "step3Desc": "Desarrollamos, probamos y desplegamos tu solucion AI personalizada en 2-4 semanas."
+    "step1Title": "Entendemos tu negocio",
+    "step1Desc": "Analizamos tus flujos, puntos de dolor y objetivos para identificar las mejores oportunidades AI.",
+    "step2Title": "Disenamos la solucion",
+    "step2Desc": "Creamos una arquitectura de solucion enfocada y a medida para tus necesidades.",
+    "step3Title": "Construimos y entregamos",
+    "step3Desc": "Desarrollamos, probamos y desplegamos tu solucion AI personalizada en 2-4 semanas."
   },
   "pricing": {
-    "title": "Precios simples y transparentes", "subtitle": "Elige el plan que se ajuste a tus necesidades",
-    "starterTitle": "Starter", "starterDesc": "Perfecto para probar AI en tu negocio", "starterPrice": "$2,500",
-    "starterF1": "1 solucion AI personalizada", "starterF2": "Entrega en 2 semanas", "starterF3": "30 dias de soporte",
-    "growthTitle": "Growth", "growthDesc": "Para negocios listos para escalar con AI", "growthPrice": "$5,000",
-    "growthF1": "Hasta 3 soluciones AI", "growthF2": "Entrega prioritaria en 2 semanas", "growthF3": "90 dias de soporte", "growthF4": "Optimizacion mensual",
-    "customTitle": "Custom", "customDesc": "Soluciones AI nivel empresarial", "customPrice": "Hablemos",
-    "customF1": "Soluciones ilimitadas", "customF2": "Equipo dedicado", "customF3": "Soporte y mantenimiento continuo", "customF4": "Integraciones personalizadas",
-    "popular": "Mas popular", "cta": "Comenzar", "ctaCustom": "Contactanos"
+    "title": "Precios simples y transparentes",
+    "subtitle": "Elige el plan que se ajuste a tus necesidades",
+    "starterTitle": "Starter",
+    "starterDesc": "Perfecto para probar AI en tu negocio",
+    "starterPrice": "$2,500",
+    "starterF1": "1 solucion AI personalizada",
+    "starterF2": "Entrega en 2 semanas",
+    "starterF3": "30 dias de soporte",
+    "growthTitle": "Growth",
+    "growthDesc": "Para negocios listos para escalar con AI",
+    "growthPrice": "$5,000",
+    "growthF1": "Hasta 3 soluciones AI",
+    "growthF2": "Entrega prioritaria en 2 semanas",
+    "growthF3": "90 dias de soporte",
+    "growthF4": "Optimizacion mensual",
+    "customTitle": "Custom",
+    "customDesc": "Soluciones AI nivel empresarial",
+    "customPrice": "Hablemos",
+    "customF1": "Soluciones ilimitadas",
+    "customF2": "Equipo dedicado",
+    "customF3": "Soporte y mantenimiento continuo",
+    "customF4": "Integraciones personalizadas",
+    "popular": "Mas popular",
+    "cta": "Comenzar",
+    "ctaCustom": "Contactanos"
   },
   "diff": {
     "title": "La mayoria de proyectos AI fallan porque son demasiado complejos",
@@ -61,15 +104,291 @@
     "point2": "Entregado rapido — 2-4 semanas, no meses de desarrollo",
     "point3": "Facil de usar — tu equipo lo adopta desde el dia uno"
   },
-  "cta": { "title": "Construyamos tu primera solucion AI", "subtitle": "Cuentanos tu tarea que mas tiempo consume. Te proponemos una solucion en 24-48 horas.", "button": "Agendar llamada" },
-  "home": { "footer": "2026 TailorAI. Todos los derechos reservados." },
-  "about": { "title": "Resumen del Portafolio", "subtitle": "Aplicaciones impulsadas por AI enfocadas en productividad real y automatizacion", "visionTitle": "La Vision", "vision1": "Este portafolio reune aplicaciones impulsadas por AI enfocadas en productividad personal, finanzas inteligentes, analitica deportiva y generacion asistida de software.", "vision2": "Desde briefings de inteligencia diaria hasta analitica de futbol fantasy y estudios de desarrollo asistido por AI, cada aplicacion demuestra como la AI puede transformar datos complejos en insights accionables.", "vision3": "El hilo conductor:", "vision3Bold": "Soluciones AI-first que convierten informacion compleja en decisiones simples", "vision3End": ", optimizan tiempo y recursos del usuario y aceleran la creacion de nuevos productos digitales.", "stat1Label": "Apps Impulsadas por AI", "stat2Label": "Tecnologias Integradas", "stat3Label": "Puntos de Datos Analizados", "stat4Label": "Productividad Ganada", "skillsTitle": "Tecnologias Centrales y Areas de Enfoque", "value1Title": "Productividad y Toma de Decisiones", "value1Desc": "AI Commute, BudgetFlow y Agile Tracker ayudan a usuarios y equipos a consumir informacion y priorizar mejor.", "value2Title": "Datos + AI Aplicada", "value2Desc": "FootballStats y BudgetFlow muestran como transformar datos crudos en indicadores accionables.", "value3Title": "Desarrollo Asistido por AI", "value3Desc": "VibeForge posiciona al portafolio en la frontera de AI para desarrollo." },
-  "projects": { "title": "Aplicaciones Impulsadas por AI", "subtitle": "Un portafolio completo mostrando automatizacion inteligente en el mundo real", "aiCommute": { "title": "AI Commute Summarizer", "tagline": "Briefing de Inteligencia Diaria", "description": "Asistente diario que convierte fuentes de informacion en resumenes breves durante el trayecto al trabajo." }, "budgetFlow": { "title": "BudgetFlow (MoneyMinder)", "tagline": "Seguimiento Inteligente de Finanzas", "description": "Plataforma de finanzas personales con tracking inteligente, categorizacion flexible y reportes visuales." }, "agileTracker": { "title": "Processing Team Agile Tracker", "tagline": "Planificacion de Sprints y Colaboracion", "description": "Herramienta de gestion agil para equipos con planificacion de sprints y visualizacion de progreso." }, "vibeForge": { "title": "VibeForge - Smooth Build Studio", "tagline": "Entorno de Desarrollo Vibe-First", "description": "Entorno de desarrollo AI donde el usuario describe la vision y el sistema genera estructura y componentes." }, "footballStats": { "title": "FootballStats - Fantasy Power Index", "tagline": "Analitica Avanzada de Futbol", "description": "Dashboard de analitica futbolistica con rankings, metricas FPI y multiples ligas." }, "thursdayFootball": { "title": "ThursdayFootball", "tagline": "Gestion de Partidos Casuales", "description": "Plataforma social para organizar partidos de futbol entre amigos y companeros." }, "footballAcademy": { "title": "Football Academy Manager", "tagline": "Plataforma SaaS para Academias de Futbol", "description": "Plataforma de gestion integral para academias de futbol juvenil con inscripcion, pagos, CRM y programacion." }, "hearthbeat": { "title": "Hearthbeat Family Hub", "tagline": "Coordinacion Familiar Inteligente", "description": "Hub familiar que integra coordinacion, comunicacion y recomendaciones inteligentes." }, "viewProject": "Ver Proyecto", "code": "Codigo", "narrativeTitle": "Insight del Portafolio", "narrative1Title": "Productividad y Decisiones", "narrative1Desc": "AI Commute, BudgetFlow y Agile Tracker ayudan a priorizar con menos friccion.", "narrative2Title": "Datos + AI Aplicada", "narrative2Desc": "FootballStats y BudgetFlow transforman datos en indicadores accionables.", "narrative3Title": "Desarrollo Asistido por AI", "narrative3Desc": "VibeForge posiciona al portafolio en la frontera de AI para desarrollo.", "narrativeConclusion": "En conjunto, estas aplicaciones ilustran", "narrativeBold": "soluciones AI-first que convierten informacion compleja en decisiones simples", "narrativeEnd": ", optimizan tiempo y recursos." },
-  "contact": { "title": "Contactanos", "subtitle": "Listo para transformar tu negocio con AI?", "nameLabel": "Nombre Completo", "namePlaceholder": "Tu nombre", "emailLabel": "Correo Electronico", "emailPlaceholder": "tu@correo.com", "companyLabel": "Empresa (opcional)", "companyPlaceholder": "Nombre de tu empresa", "subjectLabel": "Asunto", "subjectPlaceholder": "Como podemos ayudarte?", "messageLabel": "Mensaje", "messagePlaceholder": "Cuentanos sobre tu proyecto...", "submit": "Enviar Mensaje", "sending": "Enviando...", "successTitle": "Mensaje Enviado!", "successMessage": "Gracias. Te responderemos en 24 horas.", "errorMessage": "Algo salio mal. Intentalo de nuevo.", "infoTitle": "Informacion de Contacto", "infoDesc": "Preguntas sobre nuestras soluciones AI?", "responseTime": "Tiempo de respuesta: 24 horas", "chatCta": "Respuestas inmediatas?", "chatCtaButton": "Chatea con nuestro Asistente AI" },
-  "consultation": { "title": "Agendar una Consulta", "subtitle": "Programa una consulta gratuita de 30 minutos.", "nameLabel": "Nombre Completo", "namePlaceholder": "Tu nombre", "emailLabel": "Correo", "emailPlaceholder": "tu@correo.com", "companyLabel": "Empresa (opcional)", "companyPlaceholder": "Tu empresa", "dateLabel": "Fecha Preferida", "timeLabel": "Horarios Disponibles", "topicLabel": "Tema", "topicPlaceholder": "Que te gustaria discutir?", "notesLabel": "Notas (opcional)", "notesPlaceholder": "Informacion adicional...", "submit": "Agendar Consulta", "booking": "Agendando...", "successTitle": "Consulta Agendada!", "successMessage": "Tu consulta ha sido confirmada.", "errorMessage": "Algo salio mal.", "addToCalendar": "Agregar al Calendario", "noSlots": "No hay horarios disponibles", "selectDate": "Selecciona una fecha", "topics": { "strategy": "Estrategia AI", "development": "Desarrollo AI", "integration": "Integracion AI", "analytics": "Analitica de Datos", "automation": "Automatizacion", "other": "Otro" } },
-  "chat": { "title": "Asistente TailorAI", "subtitle": "Pregunta sobre nuestras soluciones AI", "placeholder": "Escribe tu pregunta...", "send": "Enviar", "thinking": "Pensando...", "welcome": "Hola! Soy el asistente de TailorAI. Como puedo ayudarte? Puedo responder sobre soluciones AI, discutir necesidades de tu negocio o ayudarte a agendar una consulta.", "error": "Error. Intentalo de nuevo." },
-  "aiApp": { "badge": "Motor de Soluciones AI", "title": "Solucionador AI", "subtitle": "Describe tu problema y obten soluciones paso a paso", "problemTypeLabel": "Tipo de Problema", "problemTypePlaceholder": "Selecciona tipo", "problemLabel": "Describe Tu Problema", "problemPlaceholder": "Ingresa tu problema...", "solving": "Analizando...", "solve": "Resolver", "solutionTitle": "Solucion AI", "problemSummary": "Resumen", "solutionApproach": "Enfoque", "stepByStep": "Guia Paso a Paso", "howItWorksTitle": "Como Funciona", "howItWorks1": "Selecciona tipo de problema", "howItWorks2": "Describe en detalle", "howItWorks3": "Clic en Resolver", "howItWorks4": "Sigue la guia", "recentSolutions": "Soluciones Recientes", "proTipTitle": "Consejo Pro", "proTipDesc": "Da el maximo de contexto y detalle posible.", "types": { "general": "General", "generalDesc": "Cualquier pregunta", "math": "Matematicas", "mathDesc": "Ecuaciones", "coding": "Programacion", "codingDesc": "Logica de codigo", "logic": "Logica", "logicDesc": "Razonamiento", "optimization": "Optimizacion", "optimizationDesc": "Eficiencia" } },
-  "notFound": { "title": "Pagina No Encontrada", "description": "La pagina no existe.", "goHome": "Ir a Inicio", "goBack": "Volver" },
-  "testimonials": { "title": "Lo que Dicen Nuestros Clientes", "subtitle": "Confianza de empresas innovadoras", "t1Name": "Maria Gonzalez", "t1Role": "CTO, FinTech Solutions", "t1Text": "La hoja de ruta AI transformo nuestro enfoque. Redujimos trabajo manual en un 60%.", "t2Name": "Stefan Richter", "t2Role": "VP Ingenieria, LogiTech GmbH", "t2Text": "Conectaron perfectamente nuestros sistemas legacy con ML moderno.", "t3Name": "Lucas Ferreira", "t3Role": "Director de Producto, DataViz Inc", "t3Text": "El dashboard procesa millones de datos en tiempo real.", "t4Name": "Ana Delgado", "t4Role": "CEO, SmartHome Labs", "t4Text": "Del concepto a produccion en 8 semanas." },
-  "leadMagnet": { "badge": "Guia Gratuita", "title": "5 Pasos para Integrar AI en tu Negocio", "subtitle": "Guia practica con estrategias accionables.", "step1": "Audita procesos para oportunidades AI", "step2": "Define metricas y KPIs", "step3": "Elige las tecnologias correctas", "step4": "Construye un roadmap por fases", "step5": "Mide, itera y escala", "formTitle": "Obtener Guia Gratuita", "formSubtitle": "Ingresa tus datos para descargar.", "nameLabel": "Nombre", "namePlaceholder": "Tu nombre", "emailLabel": "Correo", "emailPlaceholder": "tu@correo.com", "companyLabel": "Empresa (opcional)", "companyPlaceholder": "Tu empresa", "submitBtn": "Descargar Guia", "sending": "Procesando...", "successTitle": "Tu Guia esta Lista!", "successMessage": "Haz clic abajo para descargar.", "downloadBtn": "Descargar PDF", "errorMessage": "Error. Intentalo de nuevo." }
+  "cta": {
+    "title": "Construyamos tu primera solucion AI",
+    "subtitle": "Cuentanos tu tarea que mas tiempo consume. Te proponemos una solucion en 24-48 horas.",
+    "button": "Agendar llamada"
+  },
+  "home": {
+    "footer": "2026 TailorAI. Todos los derechos reservados."
+  },
+  "about": {
+    "title": "Resumen del Portafolio",
+    "subtitle": "Aplicaciones impulsadas por AI enfocadas en productividad real y automatizacion",
+    "visionTitle": "La Vision",
+    "vision1": "Este portafolio reune aplicaciones impulsadas por AI enfocadas en productividad personal, finanzas inteligentes, analitica deportiva y generacion asistida de software.",
+    "vision2": "Desde briefings de inteligencia diaria hasta analitica de futbol fantasy y estudios de desarrollo asistido por AI, cada aplicacion demuestra como la AI puede transformar datos complejos en insights accionables.",
+    "vision3": "El hilo conductor:",
+    "vision3Bold": "Soluciones AI-first que convierten informacion compleja en decisiones simples",
+    "vision3End": ", optimizan tiempo y recursos del usuario y aceleran la creacion de nuevos productos digitales.",
+    "stat1Label": "Apps Impulsadas por AI",
+    "stat2Label": "Tecnologias Integradas",
+    "stat3Label": "Puntos de Datos Analizados",
+    "stat4Label": "Productividad Ganada",
+    "skillsTitle": "Tecnologias Centrales y Areas de Enfoque",
+    "value1Title": "Productividad y Toma de Decisiones",
+    "value1Desc": "AI Commute, BudgetFlow y Agile Tracker ayudan a usuarios y equipos a consumir informacion y priorizar mejor.",
+    "value2Title": "Datos + AI Aplicada",
+    "value2Desc": "FootballStats y BudgetFlow muestran como transformar datos crudos en indicadores accionables.",
+    "value3Title": "Desarrollo Asistido por AI",
+    "value3Desc": "VibeForge posiciona al portafolio en la frontera de AI para desarrollo."
+  },
+  "projects": {
+    "title": "Aplicaciones Impulsadas por AI",
+    "subtitle": "Un portafolio completo mostrando automatizacion inteligente en el mundo real",
+    "aiCommute": {
+      "title": "AI Commute Summarizer",
+      "tagline": "Briefing de Inteligencia Diaria",
+      "description": "Asistente diario que convierte fuentes de informacion en resumenes breves durante el trayecto al trabajo."
+    },
+    "budgetFlow": {
+      "title": "BudgetFlow (MoneyMinder)",
+      "tagline": "Seguimiento Inteligente de Finanzas",
+      "description": "Plataforma de finanzas personales con tracking inteligente, categorizacion flexible y reportes visuales."
+    },
+    "agileTracker": {
+      "title": "Processing Team Agile Tracker",
+      "tagline": "Planificacion de Sprints y Colaboracion",
+      "description": "Herramienta de gestion agil para equipos con planificacion de sprints y visualizacion de progreso."
+    },
+    "vibeForge": {
+      "title": "VibeForge - Smooth Build Studio",
+      "tagline": "Entorno de Desarrollo Vibe-First",
+      "description": "Entorno de desarrollo AI donde el usuario describe la vision y el sistema genera estructura y componentes."
+    },
+    "footballStats": {
+      "title": "FootballStats - Fantasy Power Index",
+      "tagline": "Analitica Avanzada de Futbol",
+      "description": "Dashboard de analitica futbolistica con rankings, metricas FPI y multiples ligas."
+    },
+    "thursdayFootball": {
+      "title": "ThursdayFootball",
+      "tagline": "Gestion de Partidos Casuales",
+      "description": "Plataforma social para organizar partidos de futbol entre amigos y companeros."
+    },
+    "footballAcademy": {
+      "title": "Football Academy Manager",
+      "tagline": "Plataforma SaaS para Academias de Futbol",
+      "description": "Plataforma de gestion integral para academias de futbol juvenil con inscripcion, pagos, CRM y programacion."
+    },
+    "hearthbeat": {
+      "title": "Hearthbeat Family Hub",
+      "tagline": "Coordinacion Familiar Inteligente",
+      "description": "Hub familiar que integra coordinacion, comunicacion y recomendaciones inteligentes."
+    },
+    "viewProject": "Ver Proyecto",
+    "code": "Codigo",
+    "narrativeTitle": "Insight del Portafolio",
+    "narrative1Title": "Productividad y Decisiones",
+    "narrative1Desc": "AI Commute, BudgetFlow y Agile Tracker ayudan a priorizar con menos friccion.",
+    "narrative2Title": "Datos + AI Aplicada",
+    "narrative2Desc": "FootballStats y BudgetFlow transforman datos en indicadores accionables.",
+    "narrative3Title": "Desarrollo Asistido por AI",
+    "narrative3Desc": "VibeForge posiciona al portafolio en la frontera de AI para desarrollo.",
+    "narrativeConclusion": "En conjunto, estas aplicaciones ilustran",
+    "narrativeBold": "soluciones AI-first que convierten informacion compleja en decisiones simples",
+    "narrativeEnd": ", optimizan tiempo y recursos."
+  },
+  "contact": {
+    "title": "Contactanos",
+    "subtitle": "Listo para transformar tu negocio con AI?",
+    "nameLabel": "Nombre Completo",
+    "namePlaceholder": "Tu nombre",
+    "emailLabel": "Correo Electronico",
+    "emailPlaceholder": "tu@correo.com",
+    "companyLabel": "Empresa (opcional)",
+    "companyPlaceholder": "Nombre de tu empresa",
+    "subjectLabel": "Asunto",
+    "subjectPlaceholder": "Como podemos ayudarte?",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Cuentanos sobre tu proyecto...",
+    "submit": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "successTitle": "Mensaje Enviado!",
+    "successMessage": "Gracias. Te responderemos en 24 horas.",
+    "errorMessage": "Algo salio mal. Intentalo de nuevo.",
+    "infoTitle": "Informacion de Contacto",
+    "infoDesc": "Preguntas sobre nuestras soluciones AI?",
+    "responseTime": "Tiempo de respuesta: 24 horas",
+    "chatCta": "Respuestas inmediatas?",
+    "chatCtaButton": "Chatea con nuestro Asistente AI"
+  },
+  "consultation": {
+    "title": "Agendar una Consulta",
+    "subtitle": "Programa una consulta gratuita de 30 minutos.",
+    "nameLabel": "Nombre Completo",
+    "namePlaceholder": "Tu nombre",
+    "emailLabel": "Correo",
+    "emailPlaceholder": "tu@correo.com",
+    "companyLabel": "Empresa (opcional)",
+    "companyPlaceholder": "Tu empresa",
+    "dateLabel": "Fecha Preferida",
+    "timeLabel": "Horarios Disponibles",
+    "topicLabel": "Tema",
+    "topicPlaceholder": "Que te gustaria discutir?",
+    "notesLabel": "Notas (opcional)",
+    "notesPlaceholder": "Informacion adicional...",
+    "submit": "Agendar Consulta",
+    "booking": "Agendando...",
+    "successTitle": "Consulta Agendada!",
+    "successMessage": "Tu consulta ha sido confirmada.",
+    "errorMessage": "Algo salio mal.",
+    "addToCalendar": "Agregar al Calendario",
+    "noSlots": "No hay horarios disponibles",
+    "selectDate": "Selecciona una fecha",
+    "topics": {
+      "strategy": "Estrategia AI",
+      "development": "Desarrollo AI",
+      "integration": "Integracion AI",
+      "analytics": "Analitica de Datos",
+      "automation": "Automatizacion",
+      "other": "Otro"
+    }
+  },
+  "chat": {
+    "title": "Asistente TailorAI",
+    "subtitle": "Pregunta sobre nuestras soluciones AI",
+    "placeholder": "Escribe tu pregunta...",
+    "send": "Enviar",
+    "thinking": "Pensando...",
+    "welcome": "Hola! Soy el asistente de TailorAI. Como puedo ayudarte? Puedo responder sobre soluciones AI, discutir necesidades de tu negocio o ayudarte a agendar una consulta.",
+    "error": "Error. Intentalo de nuevo."
+  },
+  "aiApp": {
+    "badge": "Motor de Soluciones AI",
+    "title": "Solucionador AI",
+    "subtitle": "Describe tu problema y obten soluciones paso a paso",
+    "problemTypeLabel": "Tipo de Problema",
+    "problemTypePlaceholder": "Selecciona tipo",
+    "problemLabel": "Describe Tu Problema",
+    "problemPlaceholder": "Ingresa tu problema...",
+    "solving": "Analizando...",
+    "solve": "Resolver",
+    "solutionTitle": "Solucion AI",
+    "problemSummary": "Resumen",
+    "solutionApproach": "Enfoque",
+    "stepByStep": "Guia Paso a Paso",
+    "howItWorksTitle": "Como Funciona",
+    "howItWorks1": "Selecciona tipo de problema",
+    "howItWorks2": "Describe en detalle",
+    "howItWorks3": "Clic en Resolver",
+    "howItWorks4": "Sigue la guia",
+    "recentSolutions": "Soluciones Recientes",
+    "proTipTitle": "Consejo Pro",
+    "proTipDesc": "Da el maximo de contexto y detalle posible.",
+    "types": {
+      "general": "General",
+      "generalDesc": "Cualquier pregunta",
+      "math": "Matematicas",
+      "mathDesc": "Ecuaciones",
+      "coding": "Programacion",
+      "codingDesc": "Logica de codigo",
+      "logic": "Logica",
+      "logicDesc": "Razonamiento",
+      "optimization": "Optimizacion",
+      "optimizationDesc": "Eficiencia"
+    }
+  },
+  "notFound": {
+    "title": "Pagina No Encontrada",
+    "description": "La pagina no existe.",
+    "goHome": "Ir a Inicio",
+    "goBack": "Volver"
+  },
+  "testimonials": {
+    "title": "Lo que Dicen Nuestros Clientes",
+    "subtitle": "Confianza de empresas innovadoras",
+    "t1Name": "Maria Gonzalez",
+    "t1Role": "CTO, FinTech Solutions",
+    "t1Text": "La hoja de ruta AI transformo nuestro enfoque. Redujimos trabajo manual en un 60%.",
+    "t2Name": "Stefan Richter",
+    "t2Role": "VP Ingenieria, LogiTech GmbH",
+    "t2Text": "Conectaron perfectamente nuestros sistemas legacy con ML moderno.",
+    "t3Name": "Lucas Ferreira",
+    "t3Role": "Director de Producto, DataViz Inc",
+    "t3Text": "El dashboard procesa millones de datos en tiempo real.",
+    "t4Name": "Ana Delgado",
+    "t4Role": "CEO, SmartHome Labs",
+    "t4Text": "Del concepto a produccion en 8 semanas."
+  },
+  "leadMagnet": {
+    "badge": "Guia Gratuita",
+    "title": "5 Pasos para Integrar AI en tu Negocio",
+    "subtitle": "Guia practica con estrategias accionables.",
+    "step1": "Audita procesos para oportunidades AI",
+    "step2": "Define metricas y KPIs",
+    "step3": "Elige las tecnologias correctas",
+    "step4": "Construye un roadmap por fases",
+    "step5": "Mide, itera y escala",
+    "formTitle": "Obtener Guia Gratuita",
+    "formSubtitle": "Ingresa tus datos para descargar.",
+    "nameLabel": "Nombre",
+    "namePlaceholder": "Tu nombre",
+    "emailLabel": "Correo",
+    "emailPlaceholder": "tu@correo.com",
+    "companyLabel": "Empresa (opcional)",
+    "companyPlaceholder": "Tu empresa",
+    "submitBtn": "Descargar Guia",
+    "sending": "Procesando...",
+    "successTitle": "Tu Guia esta Lista!",
+    "successMessage": "Haz clic abajo para descargar.",
+    "downloadBtn": "Descargar PDF",
+    "errorMessage": "Error. Intentalo de nuevo."
+  },
+  "cases": {
+    "badge": "Soluciones Entregadas",
+    "title": "Casos de Uso y Soluciones",
+    "subtitle": "Desafios reales resueltos con herramientas AI personalizadas. Cada solucion fue disenada y entregada para una necesidad especifica.",
+    "viewDemo": "Ver en vivo",
+    "summaryTitle": "Como Resolvemos Problemas",
+    "sum1Title": "Productividad y Decisiones",
+    "sum1Desc": "Herramientas AI que ayudan a consumir informacion rapido y priorizar lo que importa.",
+    "sum2Title": "Datos en Insights",
+    "sum2Desc": "Transformando datos crudos de deportes, finanzas y operaciones en visualizaciones intuitivas.",
+    "sum3Title": "Creacion Asistida por AI",
+    "sum3Desc": "De la idea al software funcional — AI acelera todo el ciclo de desarrollo.",
+    "conclusion": "Cada solucion demuestra como herramientas AI enfocadas",
+    "conclusionBold": "convierten problemas complejos en flujos automatizados y simples.",
+    "ctaButton": "Discutir tu desafio",
+    "aiCommute": {
+      "title": "AI Commute Summarizer",
+      "challenge": "Demasiada informacion, poco tiempo en el trayecto",
+      "solution": "Asistente diario que convierte noticias y actualizaciones en resumenes de audio optimizados para el trayecto. Sintesis NLP que entrega solo lo relevante."
+    },
+    "budgetFlow": {
+      "title": "BudgetFlow (MoneyMinder)",
+      "challenge": "Sin visibilidad de finanzas personales por categoria",
+      "solution": "Rastreador financiero inteligente con categorizacion AI, reportes visuales, insights de gastos y soporte multilingue."
+    },
+    "agileTracker": {
+      "title": "Agile Sprint Tracker",
+      "challenge": "Equipos perdiendo velocidad sin visibilidad de sprints",
+      "solution": "Herramienta agil con planificacion de sprints, alineacion de objetivos y seguimiento de velocidad en tiempo real."
+    },
+    "vibeForge": {
+      "title": "VibeForge - AI Build Studio",
+      "challenge": "Ir de la idea al codigo toma demasiado tiempo",
+      "solution": "Entorno de desarrollo AI donde el usuario describe su vision y el sistema genera estructura, componentes y servicios con preview instantaneo."
+    },
+    "footballStats": {
+      "title": "Analitica de Futbol Fantasy",
+      "challenge": "Datos deportivos sin insights accionables",
+      "solution": "Dashboard analitico con metricas FPI propias, rankings de jugadores en 5+ ligas y procesamiento de datos en tiempo real."
+    },
+    "thursdayFootball": {
+      "title": "Organizador Social de Partidos",
+      "challenge": "Coordinar partidos casuales de futbol es caotico",
+      "solution": "Plataforma social para crear partidos, gestionar equipos, seguimiento de asistencia y rotacion de lavado de camisetas."
+    },
+    "footballAcademy": {
+      "title": "Football Academy Manager",
+      "challenge": "Academias gestionando inscripciones, pagos y horarios manualmente",
+      "solution": "Plataforma SaaS completa con inscripcion, programacion de clases, pagos, asignacion de entrenadores y comunicacion con padres."
+    },
+    "hearthbeat": {
+      "title": "Hub de Coordinacion Familiar",
+      "challenge": "Familias luchando por coordinar horarios y tareas",
+      "solution": "Hub familiar con calendarios compartidos, gestion de tareas y recomendaciones AI para optimizar la vida diaria."
+    }
+  }
 }
