@@ -82,7 +82,7 @@ export function UseCases() {
       title: t("cases.hearthbeat.title"), challenge: t("cases.hearthbeat.challenge"), solution: t("cases.hearthbeat.solution"),
       image: "https://images.unsplash.com/photo-1615486511484-92e172cc4fe0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwzfHxibG9vZCUyMHByZXNzdXJlJTIwbW9uaXRvciUyMGhlYWx0aCUyMHRyYWNraW5nJTIwbWVkaWNhbCUyMGRldmljZXxlbnwwfHx8fDE3NzUxMzA5NTh8MA&ixlib=rb-4.1.0&q=85",
       technologies: ["React", "Health Data", "Charts & Trends", "Family Profiles", "Medical Reports"], icon: HeartPulse,
-      liveLink: "https://hearthbeat-family-hub.netlify.app",
+      liveLink: "https://hearthbeat-family-hub.com",
     },
     {
       title: t("cases.footballAcademy.title"), challenge: t("cases.footballAcademy.challenge"), solution: t("cases.footballAcademy.solution"),
